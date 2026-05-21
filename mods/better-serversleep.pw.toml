@@ -1,0 +1,13 @@
+name = "Better Server Sleep"
+filename = "better-serversleep-26.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/z9nwMi0g/versions/hEQ78VTd/better-serversleep-26.1.jar"
+hash-format = "sha512"
+hash = "c8157ea702be7e7708b67ac87e7a66e83ed177e226b892b131a92a48683fd3e72c0ac4aadeff7e3df027d1b8b6a01c375c25dda0fb4e304039ea1ed723090ec8"
+
+[update]
+[update.modrinth]
+mod-id = "z9nwMi0g"
+version = "hEQ78VTd"

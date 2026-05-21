@@ -1,0 +1,13 @@
+name = "Essential Permissions"
+filename = "vanilla-permissions-0.3.6+26.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4de07ac050d7ba8c2faff0f6ac549d2052425282"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8110161
+project-id = 686569

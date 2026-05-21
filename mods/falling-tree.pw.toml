@@ -1,0 +1,13 @@
+name = "FallingTree"
+filename = "FallingTree-26.1.2-25.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "58f5e649b9c87ea49e075563434b2fbc8328becc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7983995
+project-id = 349559

@@ -1,0 +1,13 @@
+name = "TBS-Server"
+author = "Slash"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "c96306c37a850c764a3414a96ade6136b756d94804a0cb8ffd8fa46858849f01"
+
+[versions]
+fabric = "0.19.2"
+minecraft = "26.1.2"
