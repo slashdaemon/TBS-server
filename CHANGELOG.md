@@ -2,6 +2,17 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.0.2] — 2026-05-20
+
+### Changed
+- **StreamCraft Live** — switched from the Modrinth `0.8.8` reference to a bundled local
+  build, `streamcraft-0.8.22+mc26.1.2.jar`, carried as a loose override in `mods/` and
+  extracted by mrpack4server on deploy. 0.8.22 is a work-in-progress build not yet on
+  Modrinth; re-pin both packs to the Modrinth version once it is published. TBS-Client
+  bundles the identical jar, keeping StreamCraft matched across both packs.
+
+27 entries (26 packwiz metadata + the bundled StreamCraft jar).
+
 ## [1.0.1] — 2026-05-20
 
 Adds **Simple Voice Chat** — proximity voice chat. 27 metadata entries (was 26).

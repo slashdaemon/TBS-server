@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "b91640bd346fce1a25737aaa31233cc63af3cbd7fe307c98ff9b2cb4e95a5f75"
+hash = "4287d7406c4ca3a599b10b448ee1449c663681ea58b5ca10320d91c7bc67715f"
 
 [[files]]
 file = "README.md"
@@ -113,9 +113,8 @@ hash = "1bb055b37f28462c96e8bb93a6e47b38ecbdf4b3082aa064158087a76eaf5ed1"
 metafile = true
 
 [[files]]
-file = "mods/streamcraft-live.pw.toml"
-hash = "73e5c2a8eb6b468e70c3075fcc950aca9f167202114117fee89b440fdcf21d2f"
-metafile = true
+file = "mods/streamcraft-0.8.22+mc26.1.2.jar"
+hash = "c18c802289ba5da32b1a60ad0579c8d78056ae3e2dd1a9db539061158bb5d78a"
 
 [[files]]
 file = "mods/styled-chat.pw.toml"
