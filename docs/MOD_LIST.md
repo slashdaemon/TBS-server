@@ -9,8 +9,8 @@ alongside `README.md` and `CHANGELOG.md`.
 - Target: **Minecraft 26.1.2 (Fabric 1.x)**
 - Pack version: see [`pack.toml`](../pack.toml)
 
-**Total:** 26 mods. Every mod is server-side or `both` and either touches no
-client-visible content or shares an optional companion with TBS-Client.
+**Total:** 43 mods (S1–S8 + libs). Every mod is server-side or `both` and either
+touches no client-visible content or shares an optional companion with TBS-Client.
 
 Reference links resolve to the project page on the listed source; CurseForge
 project-ID URLs redirect to the canonical slug.
@@ -82,6 +82,53 @@ project-ID URLs redirect to the canonical slug.
 > to the same version on TBS-Client. The `v1.0.2` release bundles
 > StreamCraft 0.8.22.
 
+## Tier S8 — Worldgen content (added v1.0.4)
+
+All `side = "server"`; vanilla 26.1.2 clients still connect. See `CHANGELOG.md`
+v1.0.4 for the worldgen-seam warning and sourcing notes (Stardust Labs family
+is Modrinth-only on 26.1.2 even though CF pages exist).
+
+### Dimension overhauls
+
+| Mod | Side | Source | Filename |
+|---|---|---|---|
+| [Nullscape](https://modrinth.com/mod/LPjGiSO4) | server | Modrinth | `Nullscape_26.1_v1.2.19.jar` |
+| [Incendium](https://modrinth.com/mod/ZVzW5oNS) | server | Modrinth | `Incendium_26.1_v5.4.12.jar` |
+| [Amplified Nether](https://modrinth.com/mod/wXiGiyGX) | server | Modrinth | `Amplified_Nether_26.1_v1.2.14.jar` |
+| [Dungeons Dimensions: Nether](https://www.curseforge.com/projects/1467850) | server | CurseForge | `mcd_d_nether-fabric-26.1.2-1.3.2.jar` |
+
+### Terrain / biome
+
+| Mod | Side | Source | Filename |
+|---|---|---|---|
+| [Geophilic](https://modrinth.com/mod/hl5OLM95) | server | Modrinth | `Geophilic v3.5.mod.jar` |
+
+### Structures
+
+| Mod | Side | Source | Filename |
+|---|---|---|---|
+| [Explorify](https://modrinth.com/mod/HSfsxuTo) | server | Modrinth | `Explorify v1.6.5.mod.jar` |
+| [Dungeons and Taverns](https://modrinth.com/mod/tpehi7ww) | server | Modrinth | `dungeons-and-taverns-5.2.0.jar` |
+| [Structory](https://modrinth.com/mod/aKCwCJlY) | server | Modrinth | `Structory_26.1_v1.3.16.jar` |
+| [Structory: Towers](https://modrinth.com/mod/j3FONRYr) | server | Modrinth | `Structory_Towers_26.1_v1.0.16.jar` |
+| [Towns and Towers](https://www.curseforge.com/projects/626761) | server | CurseForge | `t_and_t-fabric-neoforge-1.13.11.jar` |
+| [MES — Moog's End Structures](https://www.curseforge.com/projects/892382) | server | CurseForge | `MoogsEndStructures-1.21-2.0.3.jar` |
+| [MVS — Moog's Voyager Structures](https://www.curseforge.com/projects/656977) | server | CurseForge | `MoogsVoyagerStructures-1.21-5.0.11.jar` |
+| [Katters Structures](https://modrinth.com/mod/V6LLU8Gf) | server | Modrinth | `katters-structures-2.4.jar` |
+
+### Tuning
+
+| Mod | Side | Source | Filename |
+|---|---|---|---|
+| [Sparse Structures](https://modrinth.com/mod/qwvI41y9) | server | Modrinth | `sparsestructures-fabric-26.1.2-3.1.2.jar` |
+
+### Required libs (S8)
+
+| Mod | Side | Source | Filename |
+|---|---|---|---|
+| [Cristel Lib](https://modrinth.com/mod/cl223EMc) | server | Modrinth | `cristellib-fabric-26.1.2-3.1.4.jar` |
+| [Moog's Structure Lib](https://www.curseforge.com/projects/1337167) | server | CurseForge | `moogs_structure_lib-2.0.1-26.1.0-26.1.2.jar` |
+
 ## Library dependencies (not in a named tier)
 
 Required by mods above.
@@ -92,6 +139,7 @@ Required by mods above.
 | [Cupboard](https://www.curseforge.com/projects/326652) | both | CurseForge | `cupboard-fabric-26.1-3.7.jar` |
 | [Forge Config API Port](https://www.curseforge.com/projects/547434) | both | CurseForge | `ForgeConfigAPIPort-v26.1.4-mc26.1.x-Fabric.jar` |
 | [Puzzles Lib](https://www.curseforge.com/projects/495476) | both | CurseForge | `PuzzlesLib-v26.1.8-mc26.1.x-Fabric.jar` |
+| [Cloth Config API](https://modrinth.com/mod/9s6osm5g) | both | Modrinth | `cloth-config-26.1.154.jar` |
 
 ## Pending — no 26.1.2 build yet
 
@@ -106,6 +154,9 @@ with no TBS-Client change required:
 - **Gamemode Unrestrictor** — flexible `/gm` (S3)
 - **Fabricord** — two-way Discord ↔ in-game chat bridge (S4)
 - **NoExpensive** — removes the anvil "Too Expensive" cap (S5)
+- **Biome Replacer** — worldgen biome remap (S8); Fabric build tops out at 1.21.11
+- **Take Us Pillage** — pillager-outpost structures (S8); original is Forge-only
+  (max 1.20.1), the Fabric continuation also stops at 1.21.11
 
 `luckperms-placeholders` (S3) was not found on CurseForge or Modrinth under that
 name — LuckPerms group/prefix data is already exposed to chat via Styled Chat +

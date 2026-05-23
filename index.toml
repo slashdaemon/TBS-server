@@ -17,6 +17,11 @@ file = "docs/TBS-mod-strategy.md"
 hash = "2042a13ad72a1fb3a593bc7e152ae96892331ab4d20bcab010e7470750fb2002"
 
 [[files]]
+file = "mods/amplified-nether.pw.toml"
+hash = "fd519a9648c386896a1c6253728c9181b4157b1901697536435befe24b9cf586"
+metafile = true
+
+[[files]]
 file = "mods/better-serversleep.pw.toml"
 hash = "bc68574daf4ef58dd69d574551d8f3b37ab3aa1456b99f210bd14fe81da9d31c"
 metafile = true
@@ -37,13 +42,38 @@ hash = "8e4512056e448a6f3d1ac179961eb699c15fbe000284e0aee041b5971b417302"
 metafile = true
 
 [[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "1b8f4603e81c48badce4a9321dea87bdeb9d3b5a2f0be566139d087afad73a47"
+metafile = true
+
+[[files]]
 file = "mods/connectivity.pw.toml"
 hash = "aea14b6915cfce6cea06cb392644f793ada2dcd3fe994c83fb80c70580b06f2f"
 metafile = true
 
 [[files]]
+file = "mods/cristel-lib.pw.toml"
+hash = "1d2d63eb812c19cc487aed0f650feb6bc1a6b7de94d465befca480fc43cc0bb4"
+metafile = true
+
+[[files]]
 file = "mods/cupboard.pw.toml"
 hash = "393b5b00c0c51233b2321c573f1c25aaab553d5c99ebf31a0d81352e3368e84e"
+metafile = true
+
+[[files]]
+file = "mods/dungeons-and-taverns.pw.toml"
+hash = "38075a7f140d8ccd1930ffdfe602882ead995e1b117b6b79b9c8713abba9f264"
+metafile = true
+
+[[files]]
+file = "mods/dungeons-dimensions-nether.pw.toml"
+hash = "53739254139a52c0a3bc8724d14880c2c17c77e6f761ae843d39160315a7a900"
+metafile = true
+
+[[files]]
+file = "mods/explorify.pw.toml"
+hash = "ce673b6e9bd9162fa0066345a3a75341ad0b307e368ddd6da10c1c359fc5f2d2"
 metafile = true
 
 [[files]]
@@ -72,6 +102,21 @@ hash = "9345e9bb45f6a59b832310fe461b89297a309e7d799d21a02baa3c9afaef9e9b"
 metafile = true
 
 [[files]]
+file = "mods/geophilic.pw.toml"
+hash = "271ea0419efbdc973c441f3d48bb32ffaf2939ba08da5171f9e0b0b6177411c7"
+metafile = true
+
+[[files]]
+file = "mods/incendium.pw.toml"
+hash = "0b886d1706a8a55d2af34fc0c751afd5fe75617c77d3f23d02efa02772e2c16a"
+metafile = true
+
+[[files]]
+file = "mods/katters-structures.pw.toml"
+hash = "bbc209f8544bb3ff31fd6819ebb3e04d13abe5461fda668c229737b93f686cd4"
+metafile = true
+
+[[files]]
 file = "mods/krypton.pw.toml"
 hash = "6686ac48bc91b3f7861eb4579d94fd55ebd18f2ab4aa091f8a99b9f0da4fa514"
 metafile = true
@@ -97,6 +142,26 @@ hash = "4105cf78911404927408547b052f8450469a108bdb525db0fb68335330872c0b"
 metafile = true
 
 [[files]]
+file = "mods/moogs-end-structures.pw.toml"
+hash = "1d16e1decdf97c6d8ce4991700b80c8374a1bda8bd4812212b1a6caf02057ffe"
+metafile = true
+
+[[files]]
+file = "mods/moogs-structure-lib.pw.toml"
+hash = "366c75270a635208b6a4f052fc13b7b215f21a0f5d2bdff310e910dd0b16f49b"
+metafile = true
+
+[[files]]
+file = "mods/moogs-voyager-structures.pw.toml"
+hash = "17d4f761b4b868edf1018c0bcd9b7d380bda044957f9f186a55e3c499cea7cbd"
+metafile = true
+
+[[files]]
+file = "mods/nullscape.pw.toml"
+hash = "994581ca8ab802887b96c122397d5e58c14063d1f56a4bae78271f8ae9867baf"
+metafile = true
+
+[[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "ff315b18bffb9843dcafb95ffb68e6897a2be66c8e990bece46d37b8d4713419"
 metafile = true
@@ -117,8 +182,23 @@ hash = "1bb055b37f28462c96e8bb93a6e47b38ecbdf4b3082aa064158087a76eaf5ed1"
 metafile = true
 
 [[files]]
+file = "mods/sparsestructures.pw.toml"
+hash = "9e2b1d39430e0de7614f28bcc6a1e3331bf492f61f8892e669745191be7db8b6"
+metafile = true
+
+[[files]]
 file = "mods/streamcraft-0.8.22+mc26.1.2.jar"
 hash = "c18c802289ba5da32b1a60ad0579c8d78056ae3e2dd1a9db539061158bb5d78a"
+
+[[files]]
+file = "mods/structory-towers.pw.toml"
+hash = "c2d51d6fd5edb04406c16820ac38700b8272804c386c82d32235b1ee51977e91"
+metafile = true
+
+[[files]]
+file = "mods/structory.pw.toml"
+hash = "251555b54fc7ec6d931acd3350b1cba484e2f4c0d2e5f1625ed663b9afd8b6fe"
+metafile = true
 
 [[files]]
 file = "mods/styled-chat.pw.toml"
@@ -128,6 +208,11 @@ metafile = true
 [[files]]
 file = "mods/text-placeholder-api.pw.toml"
 hash = "f75e287c6c29b950c53c32bbd2d3b9fe9522b48b959ff2981ed20fd9cb7bf3ce"
+metafile = true
+
+[[files]]
+file = "mods/towns-and-towers.pw.toml"
+hash = "dfa935df7701ab71fc979cfb082870383539511b59b6621cbab8fd0793eab19e"
 metafile = true
 
 [[files]]

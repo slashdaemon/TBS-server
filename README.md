@@ -73,6 +73,11 @@ for the full design rationale.
   FallingTree, Saplanting, Universal Bone Meal, Trade Cycling
 - **Tier S6 — Discoverability:** BlueMap
 - **Tier S7 — Cross-side:** StreamCraft Live, Simple Voice Chat
+- **Tier S8 — Worldgen content (server-only):** Nullscape, Incendium, Amplified
+  Nether, Dungeons Dimensions: Nether, Geophilic, Explorify, Dungeons and Taverns,
+  Structory, Structory: Towers, Towns and Towers, Moog's End Structures,
+  Moog's Voyager Structures, Katters Structures, Sparse Structures
+  (libs: Cristel Lib, Moog's Structure Lib)
 
 ## Pending mods
 
@@ -87,6 +92,8 @@ incrementally as builds appear, with no TBS-Client change required:
 - **Gamemode Unrestrictor** — flexible `/gm` (S3)
 - **Fabricord** — two-way Discord ↔ in-game chat bridge (S4)
 - **NoExpensive** — removes the anvil "Too Expensive" cap (S5)
+- **Biome Replacer** — worldgen biome remap (S8); Fabric tops out at 1.21.11
+- **Take Us Pillage** — pillager-outpost structures (S8); no 26.1.2 Fabric build
 
 `luckperms-placeholders` (S3) was not found on CurseForge or Modrinth under that name —
 LuckPerms group/prefix data is exposed to chat through Styled Chat + Text Placeholder API,

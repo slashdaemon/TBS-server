@@ -2,6 +2,77 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.0.4] — 2026-05-22
+
+Adds **Tier S8 — Worldgen content**: 16 server-only worldgen mods carried over
+from the Better Adventures+ `1.7.mrpack` reference pack. Every entry is
+`side = "server"`; a vanilla 26.1.2 client still connects and plays. Pack goes
+from 27 → 44 metadata entries (16 worldgen + 1 new auto-resolved dep
+`cloth-config`).
+
+> **Worldgen seam warning.** Existing worlds will show visible biome/structure
+> seams where pre-1.0.4 chunks meet newly generated chunks. Either pair this
+> release with a fresh world or pre-run `/chunky` to a clean boundary before
+> deploy.
+
+### Tier S8 — Worldgen content (all `side = "server"`)
+
+**Dimension overhauls**
+- **Nullscape** `1.2.19` *(Modrinth)* — End rewrite
+- **Incendium** `5.4.12` *(Modrinth)* — Nether rewrite
+- **Amplified Nether** `1.2.14` *(Modrinth)* — vertical Nether
+- **Dungeons Dimensions: Nether** `1.3.2` *(CurseForge)* — MC-Dungeons-style
+  Nether content (file: `mcd_d_nether-fabric-26.1.2-1.3.2.jar`)
+
+**Terrain / biome**
+- **Geophilic** `3.5` *(Modrinth)* — vanilla-biome terrain overhaul (mod variant,
+  not the datapack — `packwiz cf install geophilic` resolves to the datapack
+  `.zip` and must be installed via `packwiz mr install geophilic` instead)
+
+**Structures**
+- **Explorify** `1.6.5` *(Modrinth)*
+- **Dungeons and Taverns** `5.2.0` *(Modrinth)*
+- **Structory** `1.3.16` *(Modrinth)*
+- **Structory: Towers** `1.0.16` *(Modrinth)*
+- **Towns and Towers** `1.13.11` *(CurseForge)*
+- **MES — Moog's End Structures** `2.0.3` *(CurseForge)*
+- **MVS — Moog's Voyager Structures** `5.0.11` *(CurseForge)*
+- **Katters Structures** `2.4` *(Modrinth)*
+
+**Tuning**
+- **Sparse Structures** `3.1.2` *(Modrinth)* — structure-spacing knobs so the
+  added structure density stays balanced
+
+**Required libs**
+- **Cristel Lib** `3.1.4` *(Modrinth)* — required by Structory family
+- **Moog's Structure Lib** `2.0.1` *(CurseForge)* — required by MES / MVS
+  (also auto-resolved as a dependency of MES)
+
+### Auto-resolved dependencies (new)
+- **Cloth Config API** `26.1.154` *(Modrinth)* — pulled in by Towns and Towers
+  and Cristel Lib
+
+### Sourcing notes
+- Stardust Labs / Redupro family (Nullscape, Incendium, Amplified Nether,
+  Geophilic, Structory, Structory: Towers, Explorify, Dungeons and Taverns,
+  Katters Structures, Sparse Structures, Cristel Lib) has **no 26.1.2 CurseForge
+  build** even though CurseForge pages exist — `packwiz cf install` returns
+  "mod not available for the configured Minecraft version" and these were
+  installed via Modrinth. CurseForge sourcing should be retried on the next
+  pack bump in case 26.1.2 builds are uploaded later.
+- CurseForge-sourced entries (Dungeons Dimensions: Nether, Towns and Towers,
+  MES, MVS, Moog's Structure Lib) follow the pack's CF-first convention.
+
+### Not yet included — no 26.1.2 build available (new)
+- **Biome Replacer** — Fabric build tops out at 1.21.11
+- **Take Us Pillage** — original is Forge-only (max 1.20.1); the Fabric
+  continuation also stops at 1.21.11
+
+Existing pending entries from v1.0.0 are unchanged
+([`docs/MOD_LIST.md` → Pending](docs/MOD_LIST.md)).
+
+44 metadata entries (43 packwiz metadata + the bundled StreamCraft jar).
+
 ## [1.0.3] — 2026-05-22
 
 Documentation-only release. No mod additions, removals, or version bumps — the

@@ -1,0 +1,13 @@
+name = "Dungeons Dimensions: Nether"
+filename = "mcd_d_nether-fabric-26.1.2-1.3.2.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "5512e759769281e69ecc233fe8ae3c94ad016e6c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8084574
+project-id = 1467850
