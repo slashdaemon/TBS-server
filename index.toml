@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "43d66bcead906df3a3717a21e1cb14e5b28bd260ec4a894786bf548f2e51de00"
+hash = "b64e5a397db047237b44c5c9e41f8dd362d3de62be1069cace740bb4f885f4a9"
 
 [[files]]
 file = "README.md"
-hash = "060532b0b7025033c0ba26c7f7e50d89da4c60bfbce9070da7f863b56af6b96e"
+hash = "18e80bbb11cfe7da8c6d0d34b7c6e9d9a24ab5ed111056385c59a230e973a060"
 
 [[files]]
 file = "docs/MOD_LIST.md"
@@ -109,6 +109,11 @@ metafile = true
 [[files]]
 file = "mods/incendium.pw.toml"
 hash = "3c159406032d962e2d971847374dfa3fc80ffd079bdf261ee142f28f53609ad0"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "f440c3e0395218e9530071e0fc4d142060e6fdc946a109ba4a5ab8a80a4d4982"
 metafile = true
 
 [[files]]

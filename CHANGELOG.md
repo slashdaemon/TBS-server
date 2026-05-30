@@ -2,6 +2,23 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.1.8] — 2026-05-30
+
+**Added:**
+- **Just Enough Items (JEI)** `26.1.2-fabric-29.6.2.31` (CurseForge, `side = "both"`).
+  Pinned to the identical CurseForge file the TBS-Client pack already ships
+  (project `238222`, file `8108850`), so client and server run matching JEI builds.
+
+  Why a recipe viewer on the server: since **Minecraft 1.21.2**, recipes live on
+  the server and are no longer sent to the client wholesale. JEI on the client
+  alone therefore shows "JEI is missing recipes — please install JEI on the
+  server to sync recipes to the client." Installing JEI server-side restores the
+  recipe sync. JEI is fully dedicated-server-safe on 1.21.2+ (this is the mod
+  author's documented, recommended setup), so it does not break the
+  vanilla-client contract — a stock vanilla client still connects and plays.
+
+Synchronized 1.1.8 release with TBS-Client (lockstep policy).
+
 ## [1.1.7] — 2026-05-28
 
 **Version-coupling policy change.** TBS-Client and TBS-Server were previously

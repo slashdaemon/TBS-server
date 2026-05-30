@@ -1,12 +1,12 @@
 name = "TBS-Server"
 author = "Slash"
-version = "1.1.7"
+version = "1.1.8"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "1c9486edf32bd3766b1b9e3fdfb80929c0c42d59c569d977a2d81cc82e4e0552"
+hash = "27fea9b9a492170609aac74020146d0188cbb0553dc1b7fa15250f494e207423"
 
 [versions]
 fabric = "0.19.2"

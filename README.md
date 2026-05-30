@@ -78,6 +78,10 @@ for the full design rationale.
   Structory, Structory: Towers, Towns and Towers, Moog's End Structures,
   Moog's Voyager Structures, Katters Structures, Sparse Structures
   (libs: Cristel Lib, Moog's Structure Lib)
+- **Tier S9 — Client recipe sync:** Just Enough Items (JEI). The server-side half
+  of the client's recipe viewer. Since MC 1.21.2 recipes are held server-side, so
+  JEI must run on the server to sync them to JEI on the client. Dedicated-server-safe
+  and vanilla-client-safe — a stock vanilla client is unaffected.
 
 ## Pending mods
 
