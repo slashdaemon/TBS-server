@@ -25,6 +25,17 @@ All notable changes to the TBS-Server modpack.
   needed; a vanilla 26.1.2 joiner sits down and everyone sees it correctly. No
   dependencies.
 
+  **Verified in-world on production 1.1.9** — right-click stairs/slabs, look-down
+  + double-sneak + right-click, and `/trigger sit` all seat and dismount cleanly.
+
+  **Expected harmless log noise:** on boot the server logs, three times during
+  pack discovery, `Error reading pack metadata, attempting fallback type … Pack
+  version declaration mismatch between supported_formats (from 48) and min_format
+  (71.0)`. This is Sit Anywhere's own `pack.mcmeta` (`supported_formats [48, 81]`
+  vs `min_format 71` — internally inconsistent). MC loads it via fallback and its
+  `v71-1.21.5` overlay supplies the 26.1.2-era functions, so the datapack works
+  correctly. Cosmetic only — not a load failure. Do not chase it.
+
 ## [1.1.8] — 2026-05-30
 
 **Added:**
