@@ -2,6 +2,42 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.1.10] — 2026-05-31
+
+**Added — Tier S5 (Gameplay augmentation, vanilla-packet-only):**
+- **Open Parties and Claims (OPAC)** `0.26.3` *(CurseForge project `636608`,
+  file `8091537`)*, native **26.1.2** build (`open-parties-and-claims-fabric-26.1.2-0.26.3.jar`),
+  `side = "both"`. Chunk claims + player parties + chunk forceloading.
+
+  **Why it's here — anti-theft.** The concern on TBS is players *stealing from
+  each other's containers*, not block griefing. In a claimed chunk, non-members
+  cannot open chests/barrels/shulkers/hoppers/furnaces; the chunk owner grants
+  access by adding players to their **party** or defining another party as an
+  **ally** with specific access toggles. Container protection is on by default.
+
+  **Vanilla-client contract — path (1), no new client-visible content.** OPAC
+  registers no new blocks/items/entities/packets a vanilla client must understand;
+  it re-permissions how vanilla container/block interaction behaves, enforced
+  **server-side**. The in-game claim UI and Xaero map overlays are purely
+  client-side render features a stock client simply never sees. A vanilla 26.1.2
+  joiner (no mod) is fully protected *and* fully able to use the system via chat
+  commands — `/openpac-claims …`, `/openpac-parties …`, `/opm` (party chat),
+  `/openpac …` (player config) — with the mod's server-side text localization.
+
+  **Dependencies — both already in the pack.** Forge Config API Port
+  (`ForgeConfigAPIPort-v26.1.4-mc26.1.x-Fabric`) and Fabric API. No new mods added.
+
+  **Scope — server-only for now.** Chat commands cover every player. The OPAC
+  *client* mod (claim UI + Xaero minimap/world-map overlay) is a possible future
+  TBS-Client fast-follow; it is intentionally not shipped in v1.1.10.
+
+  **Config is world-scoped, tuned post-deploy.** OPAC's main config lives at
+  `world/serverconfig/openpartiesandclaims-server.toml` (generated on first run),
+  so it can't be baked into the packwiz pack. Defaults are theft-safe out of the
+  box; forceload should be capped/disabled on the live server (tick-budget) and
+  per-player claim limits set there. Tune via the Bloom.host panel / SFTP while
+  the server is stopped.
+
 ## [1.1.9] — 2026-05-30
 
 **Added — Tier S5 (Gameplay augmentation, vanilla-packet-only):**

@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "ae04a9dc4da909e95abb75b3f220c894905f4c50f252c468ed042dce250bd8ea"
+hash = "7c1a93f52b0cac0dd69cb4195c848d69d90c2a6eb7f906ded2ffefdf9523080c"
 
 [[files]]
 file = "README.md"
-hash = "7440d9441f6c274e1c8101c323dadc4aa410c124d84a432a758f89ce31b329e7"
+hash = "4c91cb759553fab54e80fb536e0fd06be05997955e04d79433f8efadb0a2223a"
 
 [[files]]
 file = "docs/MOD_LIST.md"
@@ -78,7 +78,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "2a77dc7aade5de6d21315582c4b70db40ff2bdf746b61c10d7ad3c5be8422f75"
+hash = "eebee020bae965b9f4da39a763188ec8bbbc0e34fa50c9891f921b0a14e53f7e"
 metafile = true
 
 [[files]]
@@ -159,6 +159,11 @@ metafile = true
 [[files]]
 file = "mods/nullscape.pw.toml"
 hash = "ec9964d246a346438b8a1deeae7d91b917290d4eeec19268e7f85cba10140f21"
+metafile = true
+
+[[files]]
+file = "mods/open-parties-and-claims.pw.toml"
+hash = "4d4c8f3ed2130f14d9f0c6aa6f72ea6d91f126bf726999af3be9dfaf8dadfa1b"
 metafile = true
 
 [[files]]

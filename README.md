@@ -70,7 +70,8 @@ for the full design rationale.
 - **Tier S3 — Permissions & admin:** LuckPerms, Essential Permissions, WorldEdit
 - **Tier S4 — Communication:** Text Placeholder API, Styled Chat
 - **Tier S5 — Gameplay augmentation (vanilla-packet-only):** Better Server Sleep, Lootr,
-  FallingTree, Saplanting, Universal Bone Meal, Trade Cycling, Sit Anywhere!
+  FallingTree, Saplanting, Universal Bone Meal, Trade Cycling, Sit Anywhere!,
+  Open Parties and Claims (chunk claims/parties — anti-theft, server-enforced)
 - **Tier S6 — Discoverability:** BlueMap
 - **Tier S7 — Cross-side:** StreamCraft Live, Simple Voice Chat
 - **Tier S8 — Worldgen content (server-only):** Nullscape, Incendium, Amplified
