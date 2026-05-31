@@ -2,6 +2,29 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.1.9] — 2026-05-30
+
+**Added — Tier S5 (Gameplay augmentation, vanilla-packet-only):**
+- **Sit Anywhere!** `2.3.4` *(Modrinth `gNPj0UDg`)*, MC range `1.21–26.1.2`,
+  `side = "both"`. Right-click stairs/slabs to sit; sit on arbitrary surfaces by
+  looking straight down, double-tapping sneak, then right-clicking (or `/trigger sit`).
+
+  **Why Modrinth, not CurseForge (CurseForge-first policy exception):** the
+  CurseForge "Sit AnyWhere [Data Pack]" (author *Nico4play*) is a **different,
+  stale project** — it tops out at MC 1.20.1 (Aug 2023) and uses a crafted-saddle
+  mechanic. `packwiz cf install sit-anywhere` matched that namesake and failed with
+  "mod not available for the configured Minecraft version(s)." The actively-maintained
+  "Sit Anywhere!" supporting 26.1.2 exists **only on Modrinth**, so this is a
+  legitimate Modrinth-only fallback (a name collision, not a missing-file fix).
+
+  **Vanilla-client contract — path (1), no new client-visible content.** Sit
+  Anywhere! is datapack logic underneath (shipped as a Fabric wrapper jar so it
+  drops into `mods/` and auto-applies to every world). A datapack cannot register
+  new entity/block/item types — the seat is an invisible **vanilla** entity the
+  player mounts, which stock clients already render and ride. No Polymer layer
+  needed; a vanilla 26.1.2 joiner sits down and everyone sees it correctly. No
+  dependencies.
+
 ## [1.1.8] — 2026-05-30
 
 **Added:**

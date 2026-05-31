@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "b64e5a397db047237b44c5c9e41f8dd362d3de62be1069cace740bb4f885f4a9"
+hash = "b66dd4e7596a73ccfcb7b25be2f5961e0517a4d73025b3539b40ae9708e955dd"
 
 [[files]]
 file = "README.md"
-hash = "18e80bbb11cfe7da8c6d0d34b7c6e9d9a24ab5ed111056385c59a230e973a060"
+hash = "7440d9441f6c274e1c8101c323dadc4aa410c124d84a432a758f89ce31b329e7"
 
 [[files]]
 file = "docs/MOD_LIST.md"
@@ -174,6 +174,11 @@ metafile = true
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
 hash = "2e210dbb2eca274d176c1f5d93d41638f9826153d358e9c428f1341331bc0ea5"
+metafile = true
+
+[[files]]
+file = "mods/sit-anywhere!.pw.toml"
+hash = "22bcd98778269448c29506c53bce3b9ed2ace298f7c93091f12d7dd788232656"
 metafile = true
 
 [[files]]
