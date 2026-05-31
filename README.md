@@ -18,10 +18,9 @@ The base server is vanilla 26.1.2. Every server mod must either:
 2. **Translate new content into vanilla packets** via a library like Polymer. v1.0 ships no
    mods of this kind.
 
-Two mods are shared with TBS-Client — **StreamCraft Live** and **Simple Voice Chat** —
-each shipped at the same version on both sides. Both are optional per player: a vanilla
-client without them still connects and plays. See `docs/TBS-mod-strategy.md` for the full
-design.
+One mod is shared with TBS-Client — **StreamCraft Live** — shipped at the same version on
+both sides. It is optional per player: a vanilla client without it still connects and
+plays. See `docs/TBS-mod-strategy.md` for the full design.
 
 ## Deploy
 
@@ -73,7 +72,7 @@ for the full design rationale.
   FallingTree, Saplanting, Universal Bone Meal, Trade Cycling, Sit Anywhere!,
   Open Parties and Claims (chunk claims/parties — anti-theft, server-enforced)
 - **Tier S6 — Discoverability:** BlueMap
-- **Tier S7 — Cross-side:** StreamCraft Live, Simple Voice Chat
+- **Tier S7 — Cross-side:** StreamCraft Live
 - **Tier S8 — Worldgen content (server-only):** Nullscape, Incendium, Amplified
   Nether, Dungeons Dimensions: Nether, Geophilic, Explorify, Dungeons and Taverns,
   Structory, Structory: Towers, Towns and Towers, Moog's End Structures,
@@ -111,6 +110,6 @@ which are installed. Confirm whether a separate bridge mod is still wanted.
 
 ## Version coupling
 
-TBS-Client and TBS-Server versions are **decoupled** — the mods whose versions must match
-across both packs are **StreamCraft Live** and **Simple Voice Chat**. Coordinate bumps of
-either as a synchronized release of both packs.
+TBS-Client and TBS-Server versions are **decoupled** — the mod whose version must match
+across both packs is **StreamCraft Live**. Coordinate bumps of it as a synchronized
+release of both packs.

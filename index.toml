@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "9e67485ea234bf93d177bca95cc40efdea5a878b2bb6c1df2efdf3f1d7f6f0a6"
+hash = "43aa4ebe9c751414632b2bc4eb9815ef8cf57ec467b1914b1371009373f5046d"
 
 [[files]]
 file = "README.md"
-hash = "4c91cb759553fab54e80fb536e0fd06be05997955e04d79433f8efadb0a2223a"
+hash = "d35a943b9dd11afdeca5048ece37a8b10b2ac25e7e8b86dbb355cae2dfe9f807"
 
 [[files]]
 file = "docs/MOD_LIST.md"
@@ -14,7 +14,7 @@ hash = "82a75c3bea1ee84672f69ea4589915d741799b1c21c9019676eb4c32e84f3840"
 
 [[files]]
 file = "docs/TBS-mod-strategy.md"
-hash = "2042a13ad72a1fb3a593bc7e152ae96892331ab4d20bcab010e7470750fb2002"
+hash = "b2ec1e703b592d0a9fa5394ff82905ff6c7bf5ec61e66236d896cb5653162368"
 
 [[files]]
 file = "mods/amplified-nether.pw.toml"
@@ -174,11 +174,6 @@ metafile = true
 [[files]]
 file = "mods/saplanting.pw.toml"
 hash = "f5e813628cc2c02006f6c8c32ade91618f172370263dec3a6db2eb60a45f2537"
-metafile = true
-
-[[files]]
-file = "mods/simple-voice-chat.pw.toml"
-hash = "2e210dbb2eca274d176c1f5d93d41638f9826153d358e9c428f1341331bc0ea5"
 metafile = true
 
 [[files]]

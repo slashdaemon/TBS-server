@@ -2,6 +2,17 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.1.13] — 2026-05-31
+
+**Removed Simple Voice Chat** (`2.6.17`). Proximity voice is consolidating into
+**StreamCraft Live**.
+
+- Removed `mods/simple-voice-chat.pw.toml`. Frees the Simple Voice Chat UDP port on the
+  Bloom.host server.
+- **StreamCraft Live is once again the only cross-side (`both`) mod.**
+- **Requires a redeploy** (the server pack changed). Lockstep release with TheBlockSurvival
+  1.1.13.
+
 ## [1.1.12] — 2026-05-31
 
 **No server changes** — version aligned with TheBlockSurvival 1.1.12 (lockstep),
