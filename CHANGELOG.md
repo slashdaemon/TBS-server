@@ -2,6 +2,13 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.1.12] — 2026-05-31
+
+**No server changes** — version aligned with TheBlockSurvival 1.1.12 (lockstep),
+which adds Xaero's Minimap + World Map (client-side) so the Open Parties and Claims
+map overlay works. Nothing server-side: Xaero's client maps need no server companion,
+and OPAC already runs here.
+
 ## [1.1.11] — 2026-05-31
 
 **No server mod changes** — version aligned with TheBlockSurvival 1.1.11 (lockstep),
