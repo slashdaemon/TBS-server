@@ -2,6 +2,28 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.1.11] — 2026-05-31
+
+**No server mod changes** — version aligned with TheBlockSurvival 1.1.11 (lockstep),
+which adds the Open Parties and Claims *client* + a semicolon keybind default. The
+server has shipped OPAC since 1.1.10; this entry records the runtime config tuning
+applied to the live server this release cycle (the file is world/runtime config, not
+pack metadata, so it isn't part of the `.mrpack`):
+
+- **`permissionSystem = "luck_perms"`** (was `prometheus`) — claim/forceload limits
+  are now overridable per-rank via LuckPerms meta (`xaero.pac_max_claims`,
+  `xaero.pac_max_forceloads`, etc.). Verified in the boot log:
+  `Configured OPAC to use the following permission system: luck_perms`.
+- **`maxPlayerClaimForceloads = 0`** (was `10`) — forceloading disabled. Claimed
+  chunks no longer stay ticking with no player nearby; protects the Bloom.host tick
+  budget. Grant specific ranks forceloads later via LuckPerms if wanted.
+- **`maxPlayerClaims = 500`** — left at default (claims don't tick; generous is fine).
+- Protection exception groups (Controls / Doors / Traders / Livestock) left at OPAC
+  defaults (protected — not loosened).
+
+Config path on this host: `/config/openpartiesandclaims-server.toml` (edit with the
+server stopped, or it's overwritten on shutdown).
+
 ## [1.1.10] — 2026-05-31
 
 **Added — Tier S5 (Gameplay augmentation, vanilla-packet-only):**
