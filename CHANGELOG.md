@@ -2,6 +2,14 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.2.1] — 2026-06-10
+
+**Lockstep version bump only — no server content changed.** TheBlockSurvival (client) 1.2.1
+bundles a curated Vanilla Tweaks resource pack and seeds the default resource-pack selection;
+that is purely client-side. The server mod set, StreamCraft Live version, and world are
+unchanged. This entry keeps the two packs on a synchronized version number; no redeploy is
+required.
+
 ## [1.2.0] — 2026-06-09
 
 **StreamCraft Live 0.9.9 → 0.12.1.** Lockstep with TheBlockSurvival 1.2.0. Repins the
