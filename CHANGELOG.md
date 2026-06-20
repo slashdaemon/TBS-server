@@ -2,6 +2,60 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.2.2] — 2026-06-19
+
+Adds **Tier S10 — Crossplay**: Bedrock Edition players can now join the Java
+server via **GeyserMC** (Bedrock↔Java protocol bridge) + **Floodgate** (Bedrock
+players authenticate without owning a Java account). Both ship as Fabric mods,
+`side = "server"`, and only need Fabric API (already in the pack). The Java wire
+protocol is unchanged — vanilla Java clients connect exactly as before; this only
+opens a second, optional door for Bedrock clients.
+
+**Server-only — no client lockstep needed.** Unlike the 1.1.x/1.2.x lockstep
+bumps, this touches nothing on the client side, so TheBlockSurvival (client) does
+not need a matching release. It does **require a redeploy** (the server pack
+changed).
+
+Why it fits the vanilla-client contract: Geyser-Fabric does not support
+client-required mods, and TBS already requires zero client mods. Bedrock players
+behave like a vanilla joiner — full gameplay, vanilla aesthetics. Voice: Bedrock's
+game client can't run StreamCraft's voice, so Bedrock players play without voice
+(a web-companion voice bridge for Bedrock is a separate, planned StreamCraft
+workstream).
+
+### Tier S10 — Crossplay (all `side = "server"`, Modrinth-sourced)
+- **Geyser** `Geyser-Fabric-2.10.1-b1172` *(Modrinth `wKkoqHrH`)* — Bedrock↔Java
+  protocol bridge. Geyser emulates a Java **26.1–26.1.2** client.
+- **Floodgate** `Floodgate-Fabric-2.2.6-b63` *(Modrinth `bWrNNfkb`)* — lets
+  Bedrock players join the online-mode Java server without a Java account.
+
+### Added
+- Pack override **`config/Geyser-Fabric/config.yml`** — ships `remote.auth-type:
+  floodgate` so the deploy is reproducible (Geyser also auto-detects Floodgate
+  when `remote.address: auto`, which is kept). Bundled in the `.mrpack` overrides
+  and extracted on deploy by mrpack4server.
+
+### ⚠️ Deploy requirement — Bedrock UDP port (Bloom.host)
+Bedrock uses **UDP**. Crossplay does **not** work until the host exposes a Bedrock
+port. UDP **19132** has been opened on the Bloom.host panel (shipped config default
+`bedrock.port: 19132`, `clone-remote-port: false`). If the host ever only exposes
+the one Java port instead, set `bedrock.clone-remote-port: true` and have Bedrock
+players connect on the same port as Java. Geyser loads fine even if the port is
+closed — but Bedrock clients can't connect.
+
+### Version constraint — 26.1.2 only
+Geyser's Java-side support tops out at **26.1.2** (what this server runs); it does
+**not** yet bridge **26.2**. A future 26.2 upgrade must wait for Geyser to ship
+26.2 support or Bedrock players lose access.
+
+### Notes
+- Both mods are `side = "server"`: they never reach the client pack and don't
+  affect the StreamCraft Live version coupling.
+- Floodgate prefixes Bedrock usernames (default `.`) to avoid Java/Bedrock name
+  collisions; co-located Geyser+Floodgate auto-share the generated `key.pem`.
+
+48 mods (was 46) + 1 config override.
+
 ## [1.2.1] — 2026-06-10
 
 **Lockstep version bump only — no server content changed.** TheBlockSurvival (client) 1.2.1

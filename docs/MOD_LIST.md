@@ -9,8 +9,11 @@ alongside `README.md` and `CHANGELOG.md`.
 - Target: **Minecraft 26.1.2 (Fabric 1.x)**
 - Pack version: see [`pack.toml`](../pack.toml)
 
-**Total:** 42 mods (S1–S8 + libs). Every mod is server-side or `both` and either
+**Total:** 48 mods (S1–S10 + libs). Every mod is server-side or `both` and either
 touches no client-visible content or shares an optional companion with TBS-Client.
+(The per-tier tables below fully cover S1–S8 and the new S10 crossplay tier; tables
+for mods added in v1.0.6–v1.2.1 — S9 JEI, Sit Anywhere!, Open Parties and Claims,
+Voxy WorldGen — lag behind and are authoritatively tracked in `CHANGELOG.md`.)
 
 Reference links resolve to the project page on the listed source; CurseForge
 project-ID URLs redirect to the canonical slug.
@@ -128,6 +131,19 @@ is Modrinth-only on 26.1.2 even though CF pages exist).
 |---|---|---|---|
 | [Cristel Lib](https://modrinth.com/mod/cl223EMc) | server | Modrinth | `cristellib-fabric-26.1.2-3.1.4.jar` |
 | [Moog's Structure Lib](https://www.curseforge.com/projects/1337167) | server | CurseForge | `moogs_structure_lib-2.0.1-26.1.0-26.1.2.jar` |
+
+## Tier S10 — Crossplay (added v1.2.2)
+
+Lets **Bedrock Edition** clients join the Java server. Both `side = "server"`; the
+Java wire protocol is unchanged so vanilla Java clients are unaffected. Geyser
+bridges **Java 26.1.2 only** (not 26.2 yet). Ships with a pack override
+`config/Geyser-Fabric/config.yml` (`remote.auth-type: floodgate`). Host exposes a
+Bedrock UDP port (19132 on Bloom.host) — see `CHANGELOG.md` v1.2.2.
+
+| Mod | Side | Source | Filename |
+|---|---|---|---|
+| [Geyser](https://modrinth.com/mod/wKkoqHrH) | server | Modrinth | `Geyser-Fabric-2.10.1-b1172.jar` |
+| [Floodgate](https://modrinth.com/mod/bWrNNfkb) | server | Modrinth | `Floodgate-Fabric-2.2.6-b63.jar` |
 
 ## Library dependencies (not in a named tier)
 

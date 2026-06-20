@@ -1,0 +1,101 @@
+# --------------------------------
+# Geyser Configuration File  —  shipped by TBS-Server (Tier S9, Bedrock crossplay)
+#
+# This file is a pack override: it is bundled in the .mrpack and extracted to
+# config/Geyser-Fabric/config.yml on deploy. The ONLY intentional change from the
+# Geyser v4 default is `remote.auth-type: floodgate` (so Bedrock players join via
+# Floodgate without a Java account). Geyser also auto-detects Floodgate when
+# remote.address is "auto", but we set it explicitly for reproducibility.
+#
+# ⚠️  BLOOM.HOST PORT DECISION — read before deploy:
+#   Bedrock uses UDP. Two supported setups, pick ONE in the hosting panel:
+#     (A) Open a dedicated UDP port 19132  → keep `bedrock.port: 19132` below.
+#     (B) Host only exposes your one Java port → set `bedrock.clone-remote-port: true`
+#         and have Bedrock players connect on the SAME port as Java.
+#   If neither is done, Bedrock clients cannot connect even though Geyser loads fine.
+#
+# GitHub: https://github.com/GeyserMC/Geyser   Wiki: https://wiki.geysermc.org/
+# --------------------------------
+
+bedrock:
+  # The IP address that will listen for connections.
+  #address: 0.0.0.0
+  # The port that will listen for connections (see the Bloom.host note above).
+  port: 19132
+  # Make the Bedrock port follow the Java port. Set to TRUE for Bloom.host setup (B).
+  clone-remote-port: false
+  # The MOTD broadcast to Bedrock clients (irrelevant when passthrough-motd is true).
+  motd1: "The Block Survival"
+  motd2: "Java + Bedrock crossplay"
+  # The Server Name shown in the Bedrock pause/settings menu.
+  server-name: "The Block Survival"
+  compression-level: 6
+  # broadcast-port: 19132
+  enable-proxy-protocol: false
+  #proxy-protocol-whitelisted-ips: [ "127.0.0.1", "172.18.0.0/16", "https://example.com/whitelist.txt" ]
+remote:
+  # Keep "auto" so the plugin/mod build derives address, port, and Floodgate automatically.
+  address: auto
+  port: 25565
+  # offline | online | floodgate. Set to floodgate so Bedrock players join without a Java account.
+  auth-type: floodgate
+  use-proxy-protocol: false
+  forward-hostname: false
+
+# With Floodgate installed on the same server (it is — Floodgate-Fabric ships in this pack),
+# the key is picked up automatically; this default is correct.
+floodgate-key-file: key.pem
+
+saved-user-logins:
+  - ThisExampleUsernameShouldBeLongEnoughToNeverBeAnXboxUsername
+  - ThisOtherExampleUsernameShouldAlsoBeLongEnough
+
+pending-authentication-timeout: 120
+
+command-suggestions: true
+
+passthrough-motd: true
+passthrough-player-counts: true
+legacy-ping-passthrough: false
+ping-passthrough-interval: 3
+
+forward-player-ping: false
+
+max-players: 100
+
+debug-mode: false
+
+show-cooldown: title
+show-coordinates: true
+disable-bedrock-scaffolding: false
+emote-offhand-workaround: "disabled"
+
+# default-locale: en_us
+cache-images: 0
+
+allow-custom-skulls: true
+max-visible-custom-skulls: 128
+custom-skull-render-distance: 32
+
+add-non-bedrock-items: true
+above-bedrock-nether-building: false
+
+force-resource-packs: true
+xbox-achievements-enabled: false
+log-player-ip-addresses: true
+notify-on-new-bedrock-update: true
+
+unusable-space-block: minecraft:barrier
+
+metrics:
+  enabled: true
+  uuid: 00000000-0000-0000-0000-000000000000
+
+# ADVANCED OPTIONS - DO NOT TOUCH UNLESS YOU KNOW WHAT YOU ARE DOING!
+scoreboard-packet-threshold: 20
+enable-proxy-connections: false
+mtu: 1400
+use-direct-connection: true
+disable-compression: true
+
+config-version: 4

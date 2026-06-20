@@ -22,6 +22,17 @@ One mod is shared with TBS-Client — **StreamCraft Live** — shipped at the sa
 both sides. It is optional per player: a vanilla client without it still connects and
 plays. See `docs/TBS-mod-strategy.md` for the full design.
 
+### Bedrock crossplay (since v1.2.2)
+
+**Bedrock Edition clients can also join**, via **Geyser** (Bedrock↔Java protocol bridge)
+and **Floodgate** (Bedrock players join the online-mode server without a Java account).
+Both are `side = "server"` Fabric mods — the Java wire protocol is unchanged, so Java
+clients are unaffected. A Bedrock player is treated like a vanilla Java joiner: full
+gameplay, no voice (StreamCraft voice can't reach Bedrock's game client — a web-companion
+bridge is planned separately). Geyser bridges **Java 26.1.2 only** (a future 26.2 upgrade
+waits on Geyser), and the host must expose a **Bedrock UDP port** — UDP `19132` is open on
+Bloom.host (see `config/Geyser-Fabric/config.yml` and `CHANGELOG.md` v1.2.2).
+
 ## Deploy
 
 One-click deploy from the TBS project root via `server-config.py`:
@@ -82,6 +93,7 @@ for the full design rationale.
   of the client's recipe viewer. Since MC 1.21.2 recipes are held server-side, so
   JEI must run on the server to sync them to JEI on the client. Dedicated-server-safe
   and vanilla-client-safe — a stock vanilla client is unaffected.
+- **Tier S10 — Crossplay (server-only):** Geyser, Floodgate (Bedrock Edition join)
 
 ## Pending mods
 
