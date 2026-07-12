@@ -2,19 +2,19 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "a6e68053da9d1a02dfec1a3947a8c515042e629855901949e5e5fb86a51b8e5d"
+hash = "07df4540474c4008e1601edbcfacec46ead579bc68978d8a3c0f16c7f160be2e"
 
 [[files]]
 file = "README.md"
-hash = "63c2e850e84a365f0d61e1344aba6b6c505ad2c220e2c0bf84434fae4048e54c"
+hash = "b62151b88801fef2ce1f4b22a2c6baf4e13089673ab30cad981428e4fd319710"
 
 [[files]]
 file = "config/Geyser-Fabric/config.yml"
-hash = "2442516003b38e4bb126f11e4bba02c8b67f420634e4cbf12151657eb2bb4285"
+hash = "86f2a41a3814eb34dc7d38028b433aa8faeb542a22e8c0f0315e90b5a3e789a9"
 
 [[files]]
 file = "docs/MOD_LIST.md"
-hash = "fb6a374f3cea6bd79fba14ab8320cd8801eab80dc2b78d953c2a6a71f5c1c48b"
+hash = "32332bee14ed10760f1800230d496400635e426eab55a39f3b4751f8876aaaf7"
 
 [[files]]
 file = "docs/TBS-mod-strategy.md"
@@ -22,7 +22,7 @@ hash = "b2ec1e703b592d0a9fa5394ff82905ff6c7bf5ec61e66236d896cb5653162368"
 
 [[files]]
 file = "mods/amplified-nether.pw.toml"
-hash = "fd519a9648c386896a1c6253728c9181b4157b1901697536435befe24b9cf586"
+hash = "5559089f8235240d7b36a8d52329250a231bf121cf9d812ac9c9e75a43e8d3e3"
 metafile = true
 
 [[files]]
@@ -47,7 +47,7 @@ metafile = true
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
-hash = "1b8f4603e81c48badce4a9321dea87bdeb9d3b5a2f0be566139d087afad73a47"
+hash = "b2a313913ed613a69bebea104a6535987182808cfce30acce473816437f85850"
 metafile = true
 
 [[files]]
@@ -57,7 +57,7 @@ metafile = true
 
 [[files]]
 file = "mods/cristel-lib.pw.toml"
-hash = "1d2d63eb812c19cc487aed0f650feb6bc1a6b7de94d465befca480fc43cc0bb4"
+hash = "1af7a0aa45d040ab695515cb6902a6a5fdf343df896d86b2acf85469734bc7b4"
 metafile = true
 
 [[files]]
@@ -67,22 +67,22 @@ metafile = true
 
 [[files]]
 file = "mods/dungeons-and-taverns.pw.toml"
-hash = "38075a7f140d8ccd1930ffdfe602882ead995e1b117b6b79b9c8713abba9f264"
+hash = "edf066a506eb3b75c6eaeac0dc80567d05b105a8ba5bac5ec3b0f4d936ab9c6e"
 metafile = true
 
 [[files]]
 file = "mods/dungeons-dimensions-nether.pw.toml"
-hash = "53739254139a52c0a3bc8724d14880c2c17c77e6f761ae843d39160315a7a900"
+hash = "9b46770537cfaf836034fa7f46ed97ed8b6ee879f723d191f0815308f9d7c63e"
 metafile = true
 
 [[files]]
 file = "mods/explorify.pw.toml"
-hash = "ce673b6e9bd9162fa0066345a3a75341ad0b307e368ddd6da10c1c359fc5f2d2"
+hash = "4a49f3ec55682c58af07f3797a77fdbd623e2093d64654eef65c6cfc439b931d"
 metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "2a77dc7aade5de6d21315582c4b70db40ff2bdf746b61c10d7ad3c5be8422f75"
+hash = "eebee020bae965b9f4da39a763188ec8bbbc0e34fa50c9891f921b0a14e53f7e"
 metafile = true
 
 [[files]]
@@ -102,7 +102,7 @@ metafile = true
 
 [[files]]
 file = "mods/floodgate.pw.toml"
-hash = "02778469a6a4cbb1f21ccbeeed79589b1ee96c23ffecf624e17c920413158dd9"
+hash = "53d6f5b3b7ce597e6ed2aa16c4c66a12318d30ecbe8771694ad6b944bba4b72f"
 metafile = true
 
 [[files]]
@@ -112,17 +112,17 @@ metafile = true
 
 [[files]]
 file = "mods/geophilic.pw.toml"
-hash = "271ea0419efbdc973c441f3d48bb32ffaf2939ba08da5171f9e0b0b6177411c7"
+hash = "7736daa0613fcdfc77a21b5693d6ed336a0731f2deb0d430b6af96066f6383f5"
 metafile = true
 
 [[files]]
 file = "mods/geyser.pw.toml"
-hash = "457ca6ea906c6bc716725f255d160246163c3bee223ef11ee73980b3fdaeeda6"
+hash = "9e6d0fa50ec975fc96471d530b6abc11e644dbe7c9b6782a83394ac5086a723a"
 metafile = true
 
 [[files]]
 file = "mods/incendium.pw.toml"
-hash = "0b886d1706a8a55d2af34fc0c751afd5fe75617c77d3f23d02efa02772e2c16a"
+hash = "3c159406032d962e2d971847374dfa3fc80ffd079bdf261ee142f28f53609ad0"
 metafile = true
 
 [[files]]
@@ -132,7 +132,7 @@ metafile = true
 
 [[files]]
 file = "mods/katters-structures.pw.toml"
-hash = "bbc209f8544bb3ff31fd6819ebb3e04d13abe5461fda668c229737b93f686cd4"
+hash = "fbd92d707765bca1f99539c8af23fc649b6ce74bd21b861540b8c34720f32090"
 metafile = true
 
 [[files]]
@@ -157,22 +157,22 @@ metafile = true
 
 [[files]]
 file = "mods/moogs-end-structures.pw.toml"
-hash = "1d16e1decdf97c6d8ce4991700b80c8374a1bda8bd4812212b1a6caf02057ffe"
+hash = "1b912b1689742c34b4678da0f24e81e7bd35c90b3380def55c3eb9ffa1bdcdeb"
 metafile = true
 
 [[files]]
 file = "mods/moogs-structure-lib.pw.toml"
-hash = "366c75270a635208b6a4f052fc13b7b215f21a0f5d2bdff310e910dd0b16f49b"
+hash = "c45df7ad92e74e89255d315964da1be7ef9c8a4d4ea08c14cf1563241677d4ea"
 metafile = true
 
 [[files]]
 file = "mods/moogs-voyager-structures.pw.toml"
-hash = "17d4f761b4b868edf1018c0bcd9b7d380bda044957f9f186a55e3c499cea7cbd"
+hash = "84aca6009c27439d7dcacbb5050c40cdbb77d620c6a547e3285b8e63d1e3dd43"
 metafile = true
 
 [[files]]
 file = "mods/nullscape.pw.toml"
-hash = "994581ca8ab802887b96c122397d5e58c14063d1f56a4bae78271f8ae9867baf"
+hash = "ec9964d246a346438b8a1deeae7d91b917290d4eeec19268e7f85cba10140f21"
 metafile = true
 
 [[files]]
@@ -202,22 +202,22 @@ metafile = true
 
 [[files]]
 file = "mods/sparsestructures.pw.toml"
-hash = "9e2b1d39430e0de7614f28bcc6a1e3331bf492f61f8892e669745191be7db8b6"
+hash = "efc7f383f80f6764ac30ab3526c5acc43f1eb3fee6aca9ee194ab155452e3152"
 metafile = true
 
 [[files]]
 file = "mods/streamcraft-live.pw.toml"
-hash = "002c9249d63d0a04e2b277904c38b45e4400bd4e0d7a9b85d8911513482b7be5"
+hash = "045add57ddd10adbbf5777d6dac128a8d2c7d012c74066f728367cfe9286769f"
 metafile = true
 
 [[files]]
 file = "mods/structory-towers.pw.toml"
-hash = "c2d51d6fd5edb04406c16820ac38700b8272804c386c82d32235b1ee51977e91"
+hash = "9674637df6df75bca987a63968ceec17bbcee9a38e44e438f44762b489772f4a"
 metafile = true
 
 [[files]]
 file = "mods/structory.pw.toml"
-hash = "251555b54fc7ec6d931acd3350b1cba484e2f4c0d2e5f1625ed663b9afd8b6fe"
+hash = "efce0ba2d1a17ba3aa20001201cbffbf444012899dff47eb434968e4bbdfcf6a"
 metafile = true
 
 [[files]]
@@ -232,7 +232,7 @@ metafile = true
 
 [[files]]
 file = "mods/towns-and-towers.pw.toml"
-hash = "dfa935df7701ab71fc979cfb082870383539511b59b6621cbab8fd0793eab19e"
+hash = "d8f3b0cd610af6252f270c29d5402a8cb3f756d2753e311b96cac0c98062ed79"
 metafile = true
 
 [[files]]

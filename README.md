@@ -122,6 +122,6 @@ which are installed. Confirm whether a separate bridge mod is still wanted.
 
 ## Version coupling
 
-TBS-Client and TBS-Server versions are **decoupled** — the mod whose version must match
-across both packs is **StreamCraft Live**. Coordinate bumps of it as a synchronized
-release of both packs.
+TBS-Client and TBS-Server ship in **lockstep** (since v1.1.7) — every bump to either pack
+is a synchronized bump of both, same version number. The mod whose jar version must match
+across both packs is **StreamCraft Live**.

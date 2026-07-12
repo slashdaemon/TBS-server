@@ -2,6 +2,39 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.3.0] — 2026-07-12
+
+**StreamCraft Live 0.12.9 → 0.15.11.** Cross-side bump of the one `both` mod, lockstep
+with TheBlockSurvival (client) **1.3.0** so the shared StreamCraft jar version matches.
+
+- Repinned **StreamCraft Live → 0.15.11+mc26.1.2** (Modrinth `dgzM9Maj`, the
+  default/unsuffixed jar — the server doesn't use the per-OS capture natives). Same
+  Modrinth version the client pins. Server-relevant changes in the 0.13–0.15 line:
+  voice and solo streaming are free for players (0.14.10), the trial is credit-based
+  with in-game extension requests (0.15.0), and consent/terms screens were updated to
+  Terms of Service 1.3 (0.15.11).
+- No protocol change — StreamCraft `PROTOCOL_VERSION` stayed `7` across 0.12.9→0.15.11,
+  so a client on either version connects fine; this keeps both sides on the current
+  build.
+- No other mod added, removed, or changed. The version jumps 1.2.4 → 1.3.0 in lockstep
+  with the client, whose 1.3.0 also restructures its Modrinth packaging (client-side
+  distribution only; nothing about the server pack changed beyond StreamCraft).
+- **Requires a redeploy** (the server pack changed).
+
+## [1.2.4] — 2026-06-21
+
+**StreamCraft Live 0.12.1 → 0.12.9.** Cross-side bump of the one `both` mod, pairing with
+TheBlockSurvival (client) **1.2.4** so the shared StreamCraft jar version matches again.
+
+- Repinned **StreamCraft Live → 0.12.9+mc26.1.2** (Modrinth `5rJQ8Dcv`, the default/unsuffixed
+  jar — the server doesn't use the per-OS capture natives). Same Modrinth version the client
+  pins.
+- No protocol change — StreamCraft `PROTOCOL_VERSION` stayed `7` across 0.12.1→0.12.9, so a
+  client on either version connects fine; this just keeps both sides on the current build.
+- No other mod added, removed, or changed; version jumps 1.2.2 → 1.2.4 to align the number
+  with the client's StreamCraft-0.12.9 release (server skipped 1.2.3).
+- **Requires a redeploy** (the server pack changed).
+
 ## [1.2.2] — 2026-06-19
 
 Adds **Tier S10 — Crossplay**: Bedrock Edition players can now join the Java
