@@ -2,6 +2,13 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.3.1] — 2026-07-12
+
+**Lockstep version sync with TheBlockSurvival (client) 1.3.1 — no server changes.** The
+client release fixes its shader pack pins for MC 26.1.2 (Photon v1.3b, Solas 3.7,
+BSL 10.1.3); shaders are client-only, so this pack only takes the synchronized version
+number. No mod changes; no deploy required.
+
 ## [1.3.0] — 2026-07-12
 
 **StreamCraft Live 0.12.9 → 0.15.11.** Cross-side bump of the one `both` mod, lockstep
