@@ -2,6 +2,28 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.4.0] — 2026-07-25
+
+**StreamCraft Live 0.15.11 → 0.17.4.** Cross-side bump of the one `both` mod, lockstep
+with TheBlockSurvival (client) **1.4.0** so the shared StreamCraft jar version matches.
+
+- Repinned **StreamCraft Live → 0.17.4+mc26.1.2** (Modrinth `OvOKFjHA`, the
+  default/unsuffixed jar — the server doesn't use the per-OS capture natives). Same
+  Modrinth version the client pins. Server-relevant changes in the 0.16–0.17 line:
+  - **Block Glow** (new, per-display, off by default) is synced server-side, so both
+    sides must run this build for the setting to propagate to other players.
+  - **Streams only publish to the video service once a viewer is in range**, and trial
+    minutes only drain while someone is actually receiving — less bandwidth and less
+    trial burn for the same play session.
+  - **Essential / shared-world sessions** are officially supported, including recognizing
+    an owned license instead of falling back to multi-party-off.
+  - Certified shader-pack rendering, Windows virtual cameras, higher-quality YouTube
+    restream audio, and streaming fixes — all client-facing, no server config.
+- No protocol change — StreamCraft `PROTOCOL_VERSION` stayed `7` across 0.15.11→0.17.4,
+  so a client on either version connects fine.
+- No other mod added, removed, or changed.
+- **Requires a redeploy** (the server pack changed).
+
 ## [1.3.1] — 2026-07-12
 
 **Lockstep version sync with TheBlockSurvival (client) 1.3.1 — no server changes.** The
