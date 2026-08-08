@@ -2,6 +2,26 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.4.1] — 2026-08-08
+
+**Geyser 2.10.1-b1172 → 2.10.1-b1184 — the last build on the 26.1.2 line.** Server-only;
+no client-facing change, so TBS-Client stays at 1.4.0.
+
+- Repinned **Geyser → 2.10.1-b1184** (Modrinth `SmldneXO`, 2026-07-10). This raises the
+  supported Bedrock Edition version from **26.30 → 26.33** and picks up three weeks of
+  fixes. **Floodgate is unchanged at 2.2.6-b63** — already the newest build for 26.1.2.
+- **This does NOT restore Bedrock crossplay.** In-game, Geyser now nags that Bedrock
+  **26.40** is out (`api.geysermc.org/v2/versions/geyser` reports protocol `2168` = 26.40).
+  Geyser supports exactly one Bedrock protocol per build, and 26.40 support ships only in
+  the **2.11.x** line — which targets **Java 26.2** and will not load on a 26.1.2 server.
+  Bedrock clients auto-update, so in practice **no Bedrock player can currently join.**
+- **The dependency has inverted.** Since 2.11.0-b1186 (2026-07-10) every Geyser build is
+  26.2-only: b1184 was the last 26.1.2 build and there will not be another. The README
+  previously said a 26.2 upgrade "waits on Geyser"; it is now the reverse — Geyser has
+  moved and TBS is what is holding. Bedrock crossplay is frozen at the 26.33 ceiling until
+  the server moves to Java 26.2.
+- **Requires a redeploy** (the server pack changed).
+
 ## [1.4.0] — 2026-07-25
 
 **StreamCraft Live 0.15.11 → 0.17.4.** Cross-side bump of the one `both` mod, lockstep

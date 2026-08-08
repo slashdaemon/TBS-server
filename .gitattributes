@@ -1,0 +1,15 @@
+# Normalize line endings to LF in the working tree on every platform.
+#
+# packwiz hashes files as they sit on disk and records those hashes in index.toml.
+# Without this, a Windows checkout (CRLF) and a macOS checkout (LF) hash the SAME
+# committed file differently, so `packwiz refresh` on either machine rewrites ~24
+# index.toml hashes and the two platforms ping-pong the diff forever.
+# Discovered 2026-08-08: the v1.4.0 index.toml held CRLF hashes, unusable on macOS.
+* text=auto eol=lf
+
+# Binaries must never be touched.
+*.exe binary
+*.mrpack binary
+*.jar binary
+*.png binary
+*.pdf binary

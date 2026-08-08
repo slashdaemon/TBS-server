@@ -29,9 +29,18 @@ and **Floodgate** (Bedrock players join the online-mode server without a Java ac
 Both are `side = "server"` Fabric mods — the Java wire protocol is unchanged, so Java
 clients are unaffected. A Bedrock player is treated like a vanilla Java joiner: full
 gameplay, no voice (StreamCraft voice can't reach Bedrock's game client — a web-companion
-bridge is planned separately). Geyser bridges **Java 26.1.2 only** (a future 26.2 upgrade
-waits on Geyser), and the host must expose a **Bedrock UDP port** — UDP `19132` is open on
-Bloom.host (see `config/Geyser-Fabric/config.yml` and `CHANGELOG.md` v1.2.2).
+bridge is planned separately). The host must expose a **Bedrock UDP port** — UDP `19132` is
+open on Bloom.host (see `config/Geyser-Fabric/config.yml` and `CHANGELOG.md` v1.2.2).
+
+> ⚠️ **Bedrock crossplay is frozen, and blocked on us — not on Geyser.** Geyser supports
+> exactly one Bedrock protocol per build. **2.10.1-b1184** (pinned here) is the *last*
+> build for Java 26.1.2 and tops out at **Bedrock 26.33**; every build from 2.11.0-b1186
+> (2026-07-10) onward is **Java 26.2 only**. Bedrock clients auto-update and are already on
+> 26.40, so in practice **no Bedrock player can join today**. The only real fix is moving
+> the server to **Java 26.2** — which is itself gated on SoulCraft, whose only version
+> nodes are 1.21.1 and 26.1.2. Alternative if 26.1.2 must hold: run **Geyser standalone
+> 2.11.x on a separate host** and add **ViaVersion** here so it can speak the newer Java
+> protocol to this server.
 
 ## Deploy
 
