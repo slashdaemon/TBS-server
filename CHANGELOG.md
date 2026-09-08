@@ -2,6 +2,33 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [1.5.0] — 2026-09-07
+
+**StreamCraft Live 0.17.4 → 0.19.22.** Cross-side bump of the one `both` mod, lockstep
+with TheBlockSurvival (client) **1.5.0** so the shared StreamCraft jar version matches.
+
+- Repinned **StreamCraft Live → 0.19.22+mc26.1.2** (Modrinth `1G3JRcHw`, the
+  default/unsuffixed jar — the server doesn't use the per-OS capture natives). Same
+  Modrinth version the client pins. Server-relevant changes in the 0.18–0.19 line:
+  - **Display Block audio** — per-block Volume and Range are stored on the block entity
+    and synced to every viewer, so both sides must run this build for the setting to
+    propagate.
+  - **Gesture Detection (beta)** — arm angles relay through the server to nearby
+    players; the server side of this exists only on 0.19.x.
+  - **Voice chat** — new `/streamcraft voice` admin command lists every player and
+    whether their voice connected; players get a one-off chat hint naming the UDP port
+    when the relay is unreachable. Voice now works for Open-to-LAN hosts.
+  - **Share to web** attaches the stream before minting the link, fixing solo web shares.
+  - **Auto-crop defaults OFF** on newly placed Display Blocks (missing-NBT-key load
+    default changed; blocks already saved keep their value).
+  - Gesture detection, Mac capture, Block Glow rendering, and settings-screen changes are
+    all client-facing, no server config.
+- No protocol change — StreamCraft `PROTOCOL_VERSION` stayed `7` across 0.17.4→0.19.22,
+  so a client on either version connects; mixed versions may hear voice twice until the
+  client updates.
+- No other mod added, removed, or changed. Geyser stays at 2.10.1-b1184 (26.1.2 ceiling).
+- **Requires a redeploy** (the server pack changed).
+
 ## [1.4.1] — 2026-08-08
 
 **Geyser 2.10.1-b1172 → 2.10.1-b1184 — the last build on the 26.1.2 line.** Server-only;
