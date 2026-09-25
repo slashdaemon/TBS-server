@@ -2,6 +2,34 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.0.0] — unreleased (draft, branch `reset-26.2`)
+
+**World reset onto Minecraft 26.2.** This draft is still being tested and has not been deployed.
+The plan is in the "TBS 26.2 Reset — Proposed Modset" doc, and variants are compared with
+`../bakeoff/`.
+
+- **MC 26.1.2 → 26.2**, Fabric Loader 0.19.2 → 0.19.5. `packwiz update --all` repinned every mod
+  to its 26.2 build. Fabric API now comes from CurseForge, which the pack's CurseForge-first
+  sourcing policy prefers.
+- **Terrain:** added **Tectonic** 3.0.28 and **Terralith** 2.6.4, plus their shared library
+  **Lithostitched** 1.8.0. Added **SlashSlabs** 0.2.1 (`+mc26.2`), bundled as a jar in `mods/`
+  because its CurseForge file isn't available yet. Removed **Geophilic**, since Terralith now
+  handles biomes.
+- **Structures:** added **Repurposed Structures** 7.7.6 (needs **MidnightLib**) and
+  **Tidal Towns** 2.0. **Sparse Structures** now ships `config/sparsestructures.json5` with
+  `spreadFactor` 1.0 (vanilla spacing); the old world ran the mod's default of 2, which halves
+  structure density. The final value comes from the bake-off.
+- **SlashSlabs config:** `config/polymer/auto-host.json` makes the server resource pack
+  required; `config/slashslabs.json` turns step height on, except while sneaking.
+- **Crossplay:** Geyser 2.10.1-b1184 → 2.11.3-b1246 (beta, 26.2 line); Floodgate b63 → b67.
+  Bedrock clients on 26.40+ can join again.
+- **StreamCraft Live 0.19.22 → 0.21.2** (`+mc26.2`). The client pack must move in lockstep.
+- Unchanged pins whose existing file already covers 26.2: FerriteCore, Chunky, Explorify,
+  Vanilla Permissions, Towns and Towers. Connectivity still resolves to its 26.1 file on
+  CurseForge; the first boot shows whether it loads.
+- Still to do before release: README tier list, a strategy-doc contract line (a server resource
+  pack is required; no client mod is), the Rainbow Bedrock mappings, and the TBS-Client 26.2 bump.
+
 ## [1.5.0] — 2026-09-07
 
 **StreamCraft Live 0.17.4 → 0.19.22.** Cross-side bump of the one `both` mod, lockstep

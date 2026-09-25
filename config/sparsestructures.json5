@@ -1,0 +1,7 @@
+{
+  // TBS reset: 1.0 = vanilla spacing (the mod's default of 2 halves structure density).
+  // Tuned by the comparison runs; see TBS/bakeoff.
+  "spreadFactor": 1.0,
+  "idBasedSalt": true,
+  "customSpreadFactors": []
+}

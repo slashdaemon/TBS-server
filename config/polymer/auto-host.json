@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "required": true,
+  "type": "polymer:automatic",
+  "message": "The Block Survival uses a small resource pack for its terrain slabs. No mods needed."
+}
