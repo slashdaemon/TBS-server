@@ -21,6 +21,10 @@ The plan is in the "TBS 26.2 Reset — Proposed Modset" doc, and variants are co
   structure density. The final value comes from the bake-off.
 - **SlashSlabs config:** `config/polymer/auto-host.json` makes the server resource pack
   required; `config/slashslabs.json` turns step height on, except while sneaking.
+- **Removed Dungeons Dimensions: Nether.** Its 26.2 build registers 89 blocks without Polymer,
+  so Fabric registry sync refuses every client that lacks it: stock vanilla clients and
+  TBS-Client alike (`mcd_d_nether` namespace). Incendium and Amplified Nether still cover the
+  Nether.
 - **Crossplay:** Geyser 2.10.1-b1184 → 2.11.3-b1246 (beta, 26.2 line); Floodgate b63 → b67.
   Bedrock clients on 26.40+ can join again.
 - **StreamCraft Live 0.19.22 → 0.21.2** (`+mc26.2`). The client pack must move in lockstep.

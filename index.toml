@@ -83,11 +83,6 @@ hash = "2ee3787ca5a448046723f8b6ed2239ee30225b64ba70f655f759f5b68676553b"
 metafile = true
 
 [[files]]
-file = "mods/dungeons-dimensions-nether.pw.toml"
-hash = "7f90c91bc9a46ef6fd196ec4a83bd4069a83d8f35f288a53eb6bc065e35a92fe"
-metafile = true
-
-[[files]]
 file = "mods/explorify.pw.toml"
 hash = "ce673b6e9bd9162fa0066345a3a75341ad0b307e368ddd6da10c1c359fc5f2d2"
 metafile = true
