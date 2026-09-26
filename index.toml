@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "2712057c79fc3a89a835f12cf79f85c6b9b561a93a911a10517e771e4de69d4f"
+hash = "bdce1d32e84476c63d00687b6740e36e874ef3930ed82b3110b6ce958a3a914f"
 
 [[files]]
 file = "README.md"
@@ -124,7 +124,7 @@ metafile = true
 
 [[files]]
 file = "mods/geyser.pw.toml"
-hash = "46611629c0e56953c7acb551c68d70d39e9a5b38697e58169f3269bc3a1f148d"
+hash = "dcdcdd4daca5b3234fb78fe589e3fcaf5967f44a4f41e0ed2ee99ad1a7cd225f"
 metafile = true
 
 [[files]]
@@ -134,7 +134,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "4ea9b9f96dcb4742fa1ad5523243a9c941715320a02a6dc90569edeb2f9e8ccf"
+hash = "0e5edfdc06c8e0265c6f194fa6a2d5e6877fc67b579a6bc7fdba402d59883a1d"
 metafile = true
 
 [[files]]
@@ -184,7 +184,7 @@ metafile = true
 
 [[files]]
 file = "mods/moogs-voyager-structures.pw.toml"
-hash = "07e29b128253e9f3466cb21ca1cd027f8db7d91ac2d2d00c97c1e6f868bef3b9"
+hash = "d8744ac7ecc07aaaf5cf005a6632b828231bdd909e4818cdf12b4108025ed8d1"
 metafile = true
 
 [[files]]
