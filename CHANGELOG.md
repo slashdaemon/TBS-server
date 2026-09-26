@@ -31,6 +31,17 @@ The plan is in the "TBS 26.2 Reset — Proposed Modset" doc, and variants are co
 - Unchanged pins whose existing file already covers 26.2: FerriteCore, Chunky, Explorify,
   Vanilla Permissions, Towns and Towers. Connectivity still resolves to its 26.1 file on
   CurseForge; the first boot shows whether it loads.
+- **Blocked on StreamCraft (paused 2026-09-26).** StreamCraft's Display Block registers a block,
+  item and block entity without Polymer (namespace `streamcraft-server`). Fabric registry sync
+  therefore refuses stock vanilla 26.2 clients, which was reproduced locally. The fix is going into
+  StreamCraft (Polymer-served block, or a config flag that skips it). This pack gets repinned to
+  that StreamCraft release, and the client pack moves in lockstep.
+- **Tested locally, not yet in this pack:** SlashRails `0.3.0-serveronly.1` (branch `server-only`)
+  and SoulCraft/Lena `0.74.13+26.2-light` both ran in the full-stack test. They get added once
+  their releases and the TBS contract change are settled. See `../RESET-26.2-HANDOFF.md`.
+- **Known issue:** Ledger fails to insert a player with a null name
+  (`players.player_name NOT NULL`), most likely SoulCraft's bot, and retries. Investigate
+  alongside Lena's integration.
 - Still to do before release: README tier list, a strategy-doc contract line (a server resource
   pack is required; no client mod is), the Rainbow Bedrock mappings, and the TBS-Client 26.2 bump.
 
