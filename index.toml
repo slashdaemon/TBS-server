@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "0a0916a457d00e990f165e75cbe8f885399c99d1583bf951c5d7ab213c56c00b"
+hash = "b24e2a6fb3806d6c6907842f6439c217884dcf26c3cd7dd42f6c277965e25f8a"
 
 [[files]]
 file = "README.md"
@@ -26,7 +26,7 @@ hash = "f2a2acdbc9225fd109aa3f8d57dd1b8ffa5c1811ef0996575a1323eaacaf4e4b"
 
 [[files]]
 file = "docs/MOD_LIST.md"
-hash = "fb6a374f3cea6bd79fba14ab8320cd8801eab80dc2b78d953c2a6a71f5c1c48b"
+hash = "32332bee14ed10760f1800230d496400635e426eab55a39f3b4751f8876aaaf7"
 
 [[files]]
 file = "docs/TBS-mod-strategy.md"
@@ -84,7 +84,7 @@ metafile = true
 
 [[files]]
 file = "mods/explorify.pw.toml"
-hash = "ce673b6e9bd9162fa0066345a3a75341ad0b307e368ddd6da10c1c359fc5f2d2"
+hash = "4a49f3ec55682c58af07f3797a77fdbd623e2093d64654eef65c6cfc439b931d"
 metafile = true
 
 [[files]]
@@ -228,7 +228,7 @@ metafile = true
 
 [[files]]
 file = "mods/streamcraft-live.pw.toml"
-hash = "f542d76b9c2f9b43f0340a385ae0f52be3c74d5d5c91b37b20a148aba9673aff"
+hash = "af5192679927f8e5ea90acf7a9a248456a50a31ef85f99eeaefb4d737b45f1b2"
 metafile = true
 
 [[files]]
@@ -268,7 +268,7 @@ metafile = true
 
 [[files]]
 file = "mods/towns-and-towers.pw.toml"
-hash = "dfa935df7701ab71fc979cfb082870383539511b59b6621cbab8fd0793eab19e"
+hash = "d8f3b0cd610af6252f270c29d5402a8cb3f756d2753e311b96cac0c98062ed79"
 metafile = true
 
 [[files]]

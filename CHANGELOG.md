@@ -27,15 +27,20 @@ The plan is in the "TBS 26.2 Reset — Proposed Modset" doc, and variants are co
   Nether.
 - **Crossplay:** Geyser 2.10.1-b1184 → 2.11.3-b1246 (beta, 26.2 line); Floodgate b63 → b67.
   Bedrock clients on 26.40+ can join again.
-- **StreamCraft Live 0.19.22 → 0.21.2** (`+mc26.2`). The client pack must move in lockstep.
+- **StreamCraft Live 0.19.22 → 0.25.0** (`+mc26.2`, Modrinth `54eiCrrZ`, file
+  `streamcraft-pc-0.25.0+mc26.2.jar`). The client pack moves in lockstep. Protocol 8: older
+  StreamCraft clients get the version-mismatch message.
 - Unchanged pins whose existing file already covers 26.2: FerriteCore, Chunky, Explorify,
   Vanilla Permissions, Towns and Towers. Connectivity still resolves to its 26.1 file on
   CurseForge; the first boot shows whether it loads.
-- **Blocked on StreamCraft (paused 2026-09-26).** StreamCraft's Display Block registers a block,
-  item and block entity without Polymer (namespace `streamcraft-server`). Fabric registry sync
-  therefore refuses stock vanilla 26.2 clients, which was reproduced locally. The fix is going into
-  StreamCraft (Polymer-served block, or a config flag that skips it). This pack gets repinned to
-  that StreamCraft release, and the client pack moves in lockstep.
+- **Vanilla-client joins (was the blocker).** StreamCraft ≤0.21.2 registered its Display Block
+  without Polymer (namespace `streamcraft-server`), so Fabric registry sync refused stock vanilla
+  26.2 clients. 0.25.0 serves the block through a bundled Polymer (`allow_vanilla_clients`,
+  default `true`). A stock vanilla client joining this pack has **not been re-tested yet**.
+- **Local runthrough (2026-09-27)** with TheBlockSurvival 2.0.0 + StreamCraft 0.25.0 and SoulCraft
+  `0.75.0+26.2-light` (screen vision, unreleased) as a loose jar outside the pack: clean boot,
+  StreamCraft client/server handshake on protocol 8, Lena's voice bridge bound, and Lena received
+  frames from a real screen share through the `tools/screen-agent` sidecar.
 - **Tested locally, not yet in this pack:** SlashRails `0.3.0-serveronly.1` (branch `server-only`)
   and SoulCraft/Lena `0.74.13+26.2-light` both ran in the full-stack test. They get added once
   their releases and the TBS contract change are settled. See `../RESET-26.2-HANDOFF.md`.
