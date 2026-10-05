@@ -36,8 +36,12 @@ The plan is in the "TBS 26.2 Reset — Proposed Modset" doc, and variants are co
   CurseForge; the first boot shows whether it loads.
 - **Vanilla-client joins (was the blocker).** StreamCraft ≤0.21.2 registered its Display Block
   without Polymer (namespace `streamcraft-server`), so Fabric registry sync refused stock vanilla
-  26.2 clients. 0.25.0 and later serve the block through a bundled Polymer (`allow_vanilla_clients`,
-  default `true`). A stock vanilla client joining this pack has **not been re-tested yet**.
+  26.2 clients. 0.25.0 and later serve the block through a bundled Polymer, but since 0.25.1
+  `allow_vanilla_clients` defaults to `false`, so the pack now ships
+  `config/streamcraft/config.properties` with it set to `true` (other keys at StreamCraft's
+  defaults). **Verified 2026-10-05:** a stock vanilla 26.2 client joined the full pack (StreamCraft
+  0.28.6), took the required slab resource pack, and saw the Display Block as the projector model
+  placed and in hand.
 - **Local runthrough (2026-09-27)** with TheBlockSurvival 2.0.0 + StreamCraft 0.25.0 and SoulCraft
   `0.75.0+26.2-light` (screen vision, unreleased) as a loose jar outside the pack: clean boot,
   StreamCraft client/server handshake on protocol 8, Lena's voice bridge bound, and Lena received

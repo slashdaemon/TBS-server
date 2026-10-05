@@ -25,6 +25,10 @@ file = "config/sparsestructures.json5"
 hash = "f2a2acdbc9225fd109aa3f8d57dd1b8ffa5c1811ef0996575a1323eaacaf4e4b"
 
 [[files]]
+file = "config/streamcraft/config.properties"
+hash = "d4d2bbeceb5cf6ae1f5dd16070702296c111718e1dc071dab5c6ef33239a1c4b"
+
+[[files]]
 file = "docs/MOD_LIST.md"
 hash = "32332bee14ed10760f1800230d496400635e426eab55a39f3b4751f8876aaaf7"
 
