@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "37e9e373ba528fe78517864f1593723eba8b303cbdec97a97cea7169d7372595"
+hash = "b16c2e87465a7749dee4dec8f238baabf23d68542c5f47106a37840ce5f9c11f"
 
 [[files]]
 file = "README.md"
-hash = "f9d350760534e5f893fefbc72ffd71f53c8dea93bde3b4ca4346d2677a32f517"
+hash = "4cc78af3595e0972a1bc5247d8a11a32afcc8e8b1e64cf54719991d08eae3cba"
 
 [[files]]
 file = "config/Geyser-Fabric/config.yml"
@@ -34,7 +34,7 @@ hash = "32332bee14ed10760f1800230d496400635e426eab55a39f3b4751f8876aaaf7"
 
 [[files]]
 file = "docs/TBS-mod-strategy.md"
-hash = "b2ec1e703b592d0a9fa5394ff82905ff6c7bf5ec61e66236d896cb5653162368"
+hash = "bb48072adbe245aa87adb77ad449ffa31eac3ab86fa6bdc144f7f436a93a355c"
 
 [[files]]
 file = "mods/amplified-nether.pw.toml"
@@ -214,6 +214,11 @@ metafile = true
 [[files]]
 file = "mods/sit-anywhere!.pw.toml"
 hash = "fa60189846a25fdfe6b59e49e4199a7735d3cb6fbd4461d5d4b6710f76c2d69e"
+metafile = true
+
+[[files]]
+file = "mods/slashrails.pw.toml"
+hash = "446f763361998b891cfdb5d936ca489d2670df087830591cafd8c39f6ce96c3d"
 metafile = true
 
 [[files]]

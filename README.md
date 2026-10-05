@@ -92,7 +92,7 @@ for the full design rationale.
   FallingTree, Saplanting, Universal Bone Meal, Trade Cycling, Sit Anywhere!,
   Open Parties and Claims (chunk claims/parties — anti-theft, server-enforced)
 - **Tier S6 — Discoverability:** BlueMap
-- **Tier S7 — Cross-side:** StreamCraft Live
+- **Tier S7 — Cross-side:** StreamCraft Live, SlashRails
 - **Tier S8 — Worldgen content (server-only):** Nullscape, Incendium, Amplified
   Nether, Dungeons Dimensions: Nether, Geophilic, Explorify, Dungeons and Taverns,
   Structory, Structory: Towers, Towns and Towers, Moog's End Structures,

@@ -35,6 +35,11 @@ The plan is in the "TBS 26.2 Reset — Proposed Modset" doc, and variants are co
   StreamCraft clients get the version-mismatch message. StreamCraft social (Discover, Friends,
   Board) is **on** for TBS: the pack's `config/streamcraft/config.properties` sets
   `social_enabled=true` (StreamCraft's default is off).
+- **SlashRails 0.3.0** (`+mc26.2`, CurseForge file `9074684`), new, in both packs at the same
+  version (the second cross-side mod after StreamCraft Live). The Track Smoother turns rail
+  staircases into smooth curves that vanilla minecarts ride. Its 26.2 Fabric jar is a server-only
+  build: vanilla clients join, use the tool through Polymer and ride the curves; TBS-Client
+  players also see the curved track.
 - Unchanged pins whose existing file already covers 26.2: FerriteCore, Chunky, Explorify,
   Vanilla Permissions, Towns and Towers. Connectivity still resolves to its 26.1 file on
   CurseForge; the first boot shows whether it loads.
