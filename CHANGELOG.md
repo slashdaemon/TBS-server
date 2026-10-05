@@ -30,7 +30,8 @@ The plan is in the "TBS 26.2 Reset — Proposed Modset" doc, and variants are co
 - **StreamCraft Live 0.19.22 → 0.28.6** (`+mc26.2`, Modrinth `alWJn0na`, file
   `streamcraft-pc-0.28.6+mc26.2.jar`). The client pack moves in lockstep. Protocol 8: older
   StreamCraft clients get the version-mismatch message. StreamCraft social (Discover, Friends,
-  Board) ships off per server until the license owner turns it on.
+  Board) is **on** for TBS: the pack's `config/streamcraft/config.properties` sets
+  `social_enabled=true` (StreamCraft's default is off).
 - Unchanged pins whose existing file already covers 26.2: FerriteCore, Chunky, Explorify,
   Vanilla Permissions, Towns and Towers. Connectivity still resolves to its 26.1 file on
   CurseForge; the first boot shows whether it loads.

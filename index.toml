@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "4a7887e972bddc7fc4ed2744acfb9a830b29b468fb4c4c0abd2f562090534286"
+hash = "413e61b45d6a9d6331130a067655a1383aded709113fd1c897800e6f35309ab2"
 
 [[files]]
 file = "README.md"
@@ -26,7 +26,7 @@ hash = "f2a2acdbc9225fd109aa3f8d57dd1b8ffa5c1811ef0996575a1323eaacaf4e4b"
 
 [[files]]
 file = "config/streamcraft/config.properties"
-hash = "d4d2bbeceb5cf6ae1f5dd16070702296c111718e1dc071dab5c6ef33239a1c4b"
+hash = "482159042d416d4fd0ed251051fc56437d68442fd598dec3645ec6e061361871"
 
 [[files]]
 file = "docs/MOD_LIST.md"
