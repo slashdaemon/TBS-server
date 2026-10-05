@@ -17,8 +17,11 @@ The plan is in the "TBS 26.2 Reset — Proposed Modset" doc, and variants are co
   handles biomes.
 - **Structures:** added **Repurposed Structures** 7.7.6 (needs **MidnightLib**) and
   **Tidal Towns** 2.0. **Sparse Structures** now ships `config/sparsestructures.json5` with
-  `spreadFactor` 1.0 (vanilla spacing); the old world ran the mod's default of 2, which halves
-  structure density. The final value comes from the bake-off.
+  `spreadFactor` 0.75, denser than vanilla spacing (1.0); the old world ran the mod's default of 2,
+  which halves structure density. 0.75 is bake-off variant A-dense.
+- **World seed `299792458`** (chosen 2026-10-05 from the bake-off). The seed isn't part of the pack:
+  it goes into the Bloom.host `server.properties` (`level-seed`) when the old world is archived.
+  On A-dense, the 1,000-block radius around spawn has 581 structures, 47 of them ships.
 - **SlashSlabs config:** `config/polymer/auto-host.json` makes the server resource pack
   required; `config/slashslabs.json` turns step height on, except while sneaking.
 - **Removed Dungeons Dimensions: Nether.** Its 26.2 build registers 89 blocks without Polymer,

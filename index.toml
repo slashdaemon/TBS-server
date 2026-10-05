@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "413e61b45d6a9d6331130a067655a1383aded709113fd1c897800e6f35309ab2"
+hash = "37e9e373ba528fe78517864f1593723eba8b303cbdec97a97cea7169d7372595"
 
 [[files]]
 file = "README.md"
@@ -22,7 +22,7 @@ hash = "a49b5c51aed42f8f964168b3164bdec8b4e26ef768479d12f0654bda54d37556"
 
 [[files]]
 file = "config/sparsestructures.json5"
-hash = "f2a2acdbc9225fd109aa3f8d57dd1b8ffa5c1811ef0996575a1323eaacaf4e4b"
+hash = "ab3afe713bd8c4ddb92072be6a30a508b10c889f292e7f19e195574fef543d7d"
 
 [[files]]
 file = "config/streamcraft/config.properties"
