@@ -46,6 +46,12 @@ The plan is in the "TBS 26.2 Reset — Proposed Modset" doc, and variants are co
   `access.controllers` set to the owner's UUID: only the owner can run `/soulcraft` or give her tasks;
   everyone else can talk with her. Her keys are not in the pack: `server-config.py deploy` uploads
   `config/soulcraft/config.json` from devenv (`SoulCraft-TBS`). Memory bridge off.
+- **Bedrock mappings (Rainbow).** `config/Geyser-Fabric/` now ships Geyser custom mappings, a
+  Bedrock resource pack and item names, generated with Rainbow from this pack's server resource
+  pack, so Bedrock players see SlashSlabs terrain slabs (grass in three tints, dirt, sand, red sand,
+  terracottas) and the Track Smoother instead of sculk sensors, copper slabs and a stick. They go
+  stale when the Polymer mod set changes; see `docs/BEDROCK-MAPPINGS.md`. Not yet checked with a
+  real Bedrock client.
 - Unchanged pins whose existing file already covers 26.2: FerriteCore, Chunky, Explorify,
   Vanilla Permissions, Towns and Towers. Connectivity still resolves to its 26.1 file on
   CurseForge; the first boot shows whether it loads.

@@ -1,0 +1,191 @@
+{
+  "format_version": 2,
+  "items": {
+    "minecraft:trial_key": [
+      {
+        "bedrock_identifier": "slashslabs:block/brown_terracotta_slab_bottom",
+        "bedrock_options": {
+          "icon": "slashslabs.block_brown_terracotta_slab_bottom_icon"
+        },
+        "components": {
+          "minecraft:use_cooldown": {
+            "seconds": 1.0E-5,
+            "cooldown_group": "slashslabs:brown_terracotta_slab"
+          },
+          "minecraft:enchantment_glint_override": false
+        },
+        "model": "slashslabs:brown_terracotta_slab",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "slashslabs:block/dirt_slab_bottom",
+        "bedrock_options": {
+          "icon": "slashslabs.block_dirt_slab_bottom_icon"
+        },
+        "components": {
+          "minecraft:use_cooldown": {
+            "seconds": 1.0E-5,
+            "cooldown_group": "slashslabs:dirt_slab"
+          },
+          "minecraft:enchantment_glint_override": false
+        },
+        "model": "slashslabs:dirt_slab",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "slashslabs:block/grass_slab_t0_bottom",
+        "bedrock_options": {
+          "icon": "slashslabs.block_grass_slab_t0_bottom_icon"
+        },
+        "components": {
+          "minecraft:use_cooldown": {
+            "seconds": 1.0E-5,
+            "cooldown_group": "slashslabs:grass_slab"
+          },
+          "minecraft:enchantment_glint_override": false
+        },
+        "model": "slashslabs:grass_slab",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "slashslabs:block/light_gray_terracotta_slab_bottom",
+        "bedrock_options": {
+          "icon": "slashslabs.block_light_gray_terracotta_slab_bottom_icon"
+        },
+        "components": {
+          "minecraft:use_cooldown": {
+            "seconds": 1.0E-5,
+            "cooldown_group": "slashslabs:light_gray_terracotta_slab"
+          },
+          "minecraft:enchantment_glint_override": false
+        },
+        "model": "slashslabs:light_gray_terracotta_slab",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "slashslabs:block/orange_terracotta_slab_bottom",
+        "bedrock_options": {
+          "icon": "slashslabs.block_orange_terracotta_slab_bottom_icon"
+        },
+        "components": {
+          "minecraft:use_cooldown": {
+            "seconds": 1.0E-5,
+            "cooldown_group": "slashslabs:orange_terracotta_slab"
+          },
+          "minecraft:enchantment_glint_override": false
+        },
+        "model": "slashslabs:orange_terracotta_slab",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "slashslabs:block/red_sand_slab_bottom",
+        "bedrock_options": {
+          "icon": "slashslabs.block_red_sand_slab_bottom_icon"
+        },
+        "components": {
+          "minecraft:use_cooldown": {
+            "seconds": 1.0E-5,
+            "cooldown_group": "slashslabs:red_sand_slab"
+          },
+          "minecraft:enchantment_glint_override": false
+        },
+        "model": "slashslabs:red_sand_slab",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "slashslabs:block/red_terracotta_slab_bottom",
+        "bedrock_options": {
+          "icon": "slashslabs.block_red_terracotta_slab_bottom_icon"
+        },
+        "components": {
+          "minecraft:use_cooldown": {
+            "seconds": 1.0E-5,
+            "cooldown_group": "slashslabs:red_terracotta_slab"
+          },
+          "minecraft:enchantment_glint_override": false
+        },
+        "model": "slashslabs:red_terracotta_slab",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "slashslabs:block/sand_slab_bottom",
+        "bedrock_options": {
+          "icon": "slashslabs.block_sand_slab_bottom_icon"
+        },
+        "components": {
+          "minecraft:use_cooldown": {
+            "seconds": 1.0E-5,
+            "cooldown_group": "slashslabs:sand_slab"
+          },
+          "minecraft:enchantment_glint_override": false
+        },
+        "model": "slashslabs:sand_slab",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "slashslabs:block/terracotta_slab_bottom",
+        "bedrock_options": {
+          "icon": "slashslabs.block_terracotta_slab_bottom_icon"
+        },
+        "components": {
+          "minecraft:use_cooldown": {
+            "seconds": 1.0E-5,
+            "cooldown_group": "slashslabs:terracotta_slab"
+          },
+          "minecraft:enchantment_glint_override": false
+        },
+        "model": "slashslabs:terracotta_slab",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "slashslabs:block/white_terracotta_slab_bottom",
+        "bedrock_options": {
+          "icon": "slashslabs.block_white_terracotta_slab_bottom_icon"
+        },
+        "components": {
+          "minecraft:use_cooldown": {
+            "seconds": 1.0E-5,
+            "cooldown_group": "slashslabs:white_terracotta_slab"
+          },
+          "minecraft:enchantment_glint_override": false
+        },
+        "model": "slashslabs:white_terracotta_slab",
+        "type": "definition"
+      },
+      {
+        "bedrock_identifier": "slashslabs:block/yellow_terracotta_slab_bottom",
+        "bedrock_options": {
+          "icon": "slashslabs.block_yellow_terracotta_slab_bottom_icon"
+        },
+        "components": {
+          "minecraft:use_cooldown": {
+            "seconds": 1.0E-5,
+            "cooldown_group": "slashslabs:yellow_terracotta_slab"
+          },
+          "minecraft:enchantment_glint_override": false
+        },
+        "model": "slashslabs:yellow_terracotta_slab",
+        "type": "definition"
+      }
+    ],
+    "minecraft:stick": [
+      {
+        "bedrock_identifier": "slashrails:item/track_smoother",
+        "bedrock_options": {
+          "icon": "slashrails.item_track_smoother",
+          "display_handheld": true
+        },
+        "components": {
+          "minecraft:use_cooldown": {
+            "seconds": 1.0E-5,
+            "cooldown_group": "slashrails:track_smoother"
+          },
+          "minecraft:enchantment_glint_override": false,
+          "minecraft:max_stack_size": 1
+        },
+        "model": "slashrails:track_smoother",
+        "type": "definition"
+      }
+    ]
+  }
+}

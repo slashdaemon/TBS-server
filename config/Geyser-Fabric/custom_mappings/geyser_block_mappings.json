@@ -1,0 +1,597 @@
+{
+  "format_version": 1,
+  "blocks": {
+    "minecraft:waxed_cut_copper_slab": {
+      "name": "minecraft.waxed_cut_copper_slab",
+      "only_override_states": true,
+      "state_overrides": {
+        "type=top,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_top"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_dirt"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 0,
+          "light_dampening": 1
+        },
+        "type=top,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_top"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_dirt"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 0,
+          "light_dampening": 0
+        }
+      }
+    },
+    "minecraft:waxed_exposed_cut_copper_slab": {
+      "name": "minecraft.waxed_exposed_cut_copper_slab",
+      "only_override_states": true,
+      "state_overrides": {
+        "type=top,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_top"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_sand"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 0,
+          "light_dampening": 1
+        },
+        "type=top,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_top"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_sand"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 0,
+          "light_dampening": 0
+        }
+      }
+    },
+    "minecraft:sculk_sensor": {
+      "name": "minecraft.sculk_sensor",
+      "only_override_states": true,
+      "state_overrides": {
+        "power=12,sculk_sensor_phase=inactive,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_white_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 1
+        },
+        "power=7,sculk_sensor_phase=inactive,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 0
+        },
+        "power=8,sculk_sensor_phase=inactive,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_orange_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 1
+        },
+        "power=6,sculk_sensor_phase=inactive,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_red_sand"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 0
+        },
+        "power=3,sculk_sensor_phase=inactive,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_grass_slab_t0_bottom"
+          },
+          "material_instances": {
+            "top_up_0": {
+              "texture": "slashslabs.block_grass_slab_top_t0"
+            },
+            "side_east_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            },
+            "side_south_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            },
+            "side_north_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            },
+            "bottom_down_0": {
+              "texture": "minecraft.block_dirt"
+            },
+            "side_west_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 1
+        },
+        "power=13,sculk_sensor_phase=inactive,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_light_gray_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 1
+        },
+        "power=5,sculk_sensor_phase=inactive,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_grass_slab_t0_bottom"
+          },
+          "material_instances": {
+            "top_up_0": {
+              "texture": "slashslabs.block_grass_slab_top_t2"
+            },
+            "side_east_0": {
+              "texture": "slashslabs.block_grass_slab_side_t2"
+            },
+            "side_south_0": {
+              "texture": "slashslabs.block_grass_slab_side_t2"
+            },
+            "side_north_0": {
+              "texture": "slashslabs.block_grass_slab_side_t2"
+            },
+            "bottom_down_0": {
+              "texture": "minecraft.block_dirt"
+            },
+            "side_west_0": {
+              "texture": "slashslabs.block_grass_slab_side_t2"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 0
+        },
+        "power=4,sculk_sensor_phase=inactive,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_grass_slab_t0_bottom"
+          },
+          "material_instances": {
+            "top_up_0": {
+              "texture": "slashslabs.block_grass_slab_top_t1"
+            },
+            "side_east_0": {
+              "texture": "slashslabs.block_grass_slab_side_t1"
+            },
+            "side_south_0": {
+              "texture": "slashslabs.block_grass_slab_side_t1"
+            },
+            "side_north_0": {
+              "texture": "slashslabs.block_grass_slab_side_t1"
+            },
+            "bottom_down_0": {
+              "texture": "minecraft.block_dirt"
+            },
+            "side_west_0": {
+              "texture": "slashslabs.block_grass_slab_side_t1"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 0
+        },
+        "power=4,sculk_sensor_phase=inactive,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_grass_slab_t0_bottom"
+          },
+          "material_instances": {
+            "top_up_0": {
+              "texture": "slashslabs.block_grass_slab_top_t1"
+            },
+            "side_east_0": {
+              "texture": "slashslabs.block_grass_slab_side_t1"
+            },
+            "side_south_0": {
+              "texture": "slashslabs.block_grass_slab_side_t1"
+            },
+            "side_north_0": {
+              "texture": "slashslabs.block_grass_slab_side_t1"
+            },
+            "bottom_down_0": {
+              "texture": "minecraft.block_dirt"
+            },
+            "side_west_0": {
+              "texture": "slashslabs.block_grass_slab_side_t1"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 1
+        },
+        "power=9,sculk_sensor_phase=inactive,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_yellow_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 1
+        },
+        "power=3,sculk_sensor_phase=inactive,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_grass_slab_t0_bottom"
+          },
+          "material_instances": {
+            "top_up_0": {
+              "texture": "slashslabs.block_grass_slab_top_t0"
+            },
+            "side_east_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            },
+            "side_south_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            },
+            "side_north_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            },
+            "bottom_down_0": {
+              "texture": "minecraft.block_dirt"
+            },
+            "side_west_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 0
+        },
+        "power=2,sculk_sensor_phase=inactive,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_sand"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 0
+        },
+        "power=5,sculk_sensor_phase=inactive,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_grass_slab_t0_bottom"
+          },
+          "material_instances": {
+            "top_up_0": {
+              "texture": "slashslabs.block_grass_slab_top_t2"
+            },
+            "side_east_0": {
+              "texture": "slashslabs.block_grass_slab_side_t2"
+            },
+            "side_south_0": {
+              "texture": "slashslabs.block_grass_slab_side_t2"
+            },
+            "side_north_0": {
+              "texture": "slashslabs.block_grass_slab_side_t2"
+            },
+            "bottom_down_0": {
+              "texture": "minecraft.block_dirt"
+            },
+            "side_west_0": {
+              "texture": "slashslabs.block_grass_slab_side_t2"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 1
+        },
+        "power=13,sculk_sensor_phase=inactive,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_light_gray_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 0
+        },
+        "power=1,sculk_sensor_phase=inactive,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_dirt"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 0
+        },
+        "power=10,sculk_sensor_phase=inactive,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_brown_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 1
+        },
+        "power=12,sculk_sensor_phase=inactive,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_white_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 0
+        },
+        "power=6,sculk_sensor_phase=inactive,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_red_sand"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 1
+        },
+        "power=1,sculk_sensor_phase=inactive,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_dirt"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 1
+        },
+        "power=11,sculk_sensor_phase=inactive,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_red_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 0
+        },
+        "power=11,sculk_sensor_phase=inactive,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_red_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 1
+        },
+        "power=9,sculk_sensor_phase=inactive,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_yellow_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 0
+        },
+        "power=10,sculk_sensor_phase=inactive,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_brown_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 0
+        },
+        "power=8,sculk_sensor_phase=inactive,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_orange_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 0
+        },
+        "power=7,sculk_sensor_phase=inactive,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_terracotta"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 1
+        },
+        "power=2,sculk_sensor_phase=inactive,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_bottom"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_sand"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 1,
+          "light_dampening": 1
+        }
+      }
+    },
+    "minecraft:waxed_oxidized_cut_copper_slab": {
+      "name": "minecraft.waxed_oxidized_cut_copper_slab",
+      "only_override_states": true,
+      "state_overrides": {
+        "type=top,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_top"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_red_sand"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 0,
+          "light_dampening": 1
+        },
+        "type=top,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_top"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "minecraft.block_red_sand"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 0,
+          "light_dampening": 0
+        }
+      }
+    },
+    "minecraft:waxed_weathered_cut_copper_slab": {
+      "name": "minecraft.waxed_weathered_cut_copper_slab",
+      "only_override_states": true,
+      "state_overrides": {
+        "type=top,waterlogged=true": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_top"
+          },
+          "material_instances": {
+            "top_up_0": {
+              "texture": "slashslabs.block_grass_slab_top_t0"
+            },
+            "side_east_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            },
+            "side_south_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            },
+            "side_north_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            },
+            "bottom_down_0": {
+              "texture": "minecraft.block_dirt"
+            },
+            "side_west_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 0,
+          "light_dampening": 1
+        },
+        "type=top,waterlogged=false": {
+          "geometry": {
+            "identifier": "geometry.slashslabs.block_dirt_slab_top"
+          },
+          "material_instances": {
+            "top_up_0": {
+              "texture": "slashslabs.block_grass_slab_top_t0"
+            },
+            "side_east_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            },
+            "side_south_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            },
+            "side_north_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            },
+            "bottom_down_0": {
+              "texture": "minecraft.block_dirt"
+            },
+            "side_west_0": {
+              "texture": "slashslabs.block_grass_slab_side_t0"
+            }
+          },
+          "friction": 0.39999998,
+          "light_emission": 0,
+          "light_dampening": 0
+        }
+      }
+    }
+  }
+}

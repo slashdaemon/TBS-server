@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "b16c2e87465a7749dee4dec8f238baabf23d68542c5f47106a37840ce5f9c11f"
+hash = "d45cea07c026aa84d855b06cee5b3ecf25e6194c2d0579843fe4dbeded7fe6fe"
 
 [[files]]
 file = "README.md"
@@ -11,6 +11,22 @@ hash = "4cc78af3595e0972a1bc5247d8a11a32afcc8e8b1e64cf54719991d08eae3cba"
 [[files]]
 file = "config/Geyser-Fabric/config.yml"
 hash = "ec4e05ab4600394ec8b2f3fac20bf16c5b22a63d508c054f9631c0f178b614f1"
+
+[[files]]
+file = "config/Geyser-Fabric/custom_mappings/geyser_block_mappings.json"
+hash = "a31645b2b7e9e0d27c546f9c31c8f7661c31ee4a3ceea34ccd914f434c23d8dd"
+
+[[files]]
+file = "config/Geyser-Fabric/custom_mappings/geyser_item_mappings.json"
+hash = "14795685c75177c41507e54d45ceb72fddc320b399812a2d1267cbfdc673c0bc"
+
+[[files]]
+file = "config/Geyser-Fabric/locales/overrides/en_us.json"
+hash = "ae5b59a9b760bd082112fff2563606581064cebca3e942ffcbde72091a56e2a3"
+
+[[files]]
+file = "config/Geyser-Fabric/packs/tbs-custom-content.zip"
+hash = "47b6d626aea73d37c1fb8ba76d6968140319dbb7f475cdfcfb50a21481fa18a7"
 
 [[files]]
 file = "config/polymer/auto-host.json"
@@ -35,6 +51,10 @@ hash = "ab3afe713bd8c4ddb92072be6a30a508b10c889f292e7f19e195574fef543d7d"
 [[files]]
 file = "config/streamcraft/config.properties"
 hash = "482159042d416d4fd0ed251051fc56437d68442fd598dec3645ec6e061361871"
+
+[[files]]
+file = "docs/BEDROCK-MAPPINGS.md"
+hash = "19c45c39d7e7f4aa818b1737becd1a95bb5f13b8eaff012494a74b78a5d34647"
 
 [[files]]
 file = "docs/MOD_LIST.md"
