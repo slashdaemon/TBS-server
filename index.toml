@@ -6,7 +6,7 @@ hash = "d45cea07c026aa84d855b06cee5b3ecf25e6194c2d0579843fe4dbeded7fe6fe"
 
 [[files]]
 file = "README.md"
-hash = "4cc78af3595e0972a1bc5247d8a11a32afcc8e8b1e64cf54719991d08eae3cba"
+hash = "6236147366d4d56c27847c0c07e382b904394d01a0acabfa877976e53398f2c2"
 
 [[files]]
 file = "config/Geyser-Fabric/config.yml"
@@ -62,7 +62,7 @@ hash = "32332bee14ed10760f1800230d496400635e426eab55a39f3b4751f8876aaaf7"
 
 [[files]]
 file = "docs/TBS-mod-strategy.md"
-hash = "bb48072adbe245aa87adb77ad449ffa31eac3ab86fa6bdc144f7f436a93a355c"
+hash = "7197449604fdcaf01bf634c19f21acb6611710aed97b37d1eeca23a81fc688c5"
 
 [[files]]
 file = "mods/amplified-nether.pw.toml"

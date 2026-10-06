@@ -2,45 +2,50 @@
 
 **The Block Survival — Server modpack**
 
-Fabric 1.x modpack for **Minecraft 26.1.2**, built with [packwiz](https://packwiz.infra.link/).
+Fabric modpack for **Minecraft 26.2**, built with [packwiz](https://packwiz.infra.link/).
 Deployed to the game server via [mrpack4server](https://github.com/Patbox/mrpack4server).
 
 TBS-Server makes the server fast, observable, well-administered, and gameplay-rich **while
-staying joinable by any vanilla 26.1.2 client** (with only StreamCraft installed).
+staying joinable by any stock vanilla 26.2 client**. Players need no mods; the server sends one
+small resource pack for its terrain slabs, which they accept on join.
 
 ## The vanilla-client contract
 
-The base server is vanilla 26.1.2. Every server mod must either:
+The base server is vanilla 26.2. Every server mod must either:
 
-1. **Add no new client-visible content** — it changes how vanilla mechanics behave (sleep
-   voting, tree-felling, anvil costs, trade restocking) without introducing new
-   blocks/items/entities/packets. **Every v1.0 gameplay mod takes this path.**
-2. **Translate new content into vanilla packets** via a library like Polymer. v1.0 ships no
-   mods of this kind.
+1. **Add no new client-visible content.** It changes how vanilla mechanics or world generation
+   behave (sleep voting, tree-felling, trade restocking, new biomes and structures built from
+   vanilla blocks) without adding new blocks, items, entities or packets.
+2. **Translate new content into vanilla packets with Polymer.** Since 2.0.0 three mods do this:
+   **SlashSlabs** (terrain slabs), **SlashRails** (the Track Smoother) and **StreamCraft Live**
+   (the Display Block, with `allow_vanilla_clients=true` in `config/streamcraft/config.properties`).
+   Polymer builds one server resource pack for all of them; `config/polymer/auto-host.json`
+   serves it and marks it required.
 
-One mod is shared with TBS-Client — **StreamCraft Live** — shipped at the same version on
-both sides. It is optional per player: a vanilla client without it still connects and
-plays. See `docs/TBS-mod-strategy.md` for the full design.
+So the contract is: **a server resource pack is required; no client mod is.** Players who
+decline the pack are disconnected.
 
-### Bedrock crossplay (since v1.2.2)
+Two mods are shared with TBS-Client and shipped at the same version on both sides:
+**StreamCraft Live** and **SlashRails**. Both are optional per player: a vanilla client without
+them still connects and plays (no stream video; smoothed rails ride smoothly but look like vanilla
+rails). See `docs/TBS-mod-strategy.md` for the full design.
 
-**Bedrock Edition clients can also join**, via **Geyser** (Bedrock↔Java protocol bridge)
-and **Floodgate** (Bedrock players join the online-mode server without a Java account).
-Both are `side = "server"` Fabric mods — the Java wire protocol is unchanged, so Java
-clients are unaffected. A Bedrock player is treated like a vanilla Java joiner: full
-gameplay, no voice (StreamCraft voice can't reach Bedrock's game client — a web-companion
-bridge is planned separately). The host must expose a **Bedrock UDP port** — UDP `19132` is
-open on Bloom.host (see `config/Geyser-Fabric/config.yml` and `CHANGELOG.md` v1.2.2).
+### Bedrock crossplay
 
-> ⚠️ **Bedrock crossplay is frozen, and blocked on us — not on Geyser.** Geyser supports
-> exactly one Bedrock protocol per build. **2.10.1-b1184** (pinned here) is the *last*
-> build for Java 26.1.2 and tops out at **Bedrock 26.33**; every build from 2.11.0-b1186
-> (2026-07-10) onward is **Java 26.2 only**. Bedrock clients auto-update and are already on
-> 26.40, so in practice **no Bedrock player can join today**. The only real fix is moving
-> the server to **Java 26.2** — which is itself gated on SoulCraft, whose only version
-> nodes are 1.21.1 and 26.1.2. Alternative if 26.1.2 must hold: run **Geyser standalone
-> 2.11.x on a separate host** and add **ViaVersion** here so it can speak the newer Java
-> protocol to this server.
+**Bedrock Edition clients can join** through **Geyser** (Bedrock↔Java protocol bridge) and
+**Floodgate** (Bedrock players join the online-mode server without a Java account). Both are
+`side = "server"` mods; Java clients are unaffected. A Bedrock player is treated like a vanilla
+Java joiner: full gameplay, no StreamCraft voice. The host must expose a Bedrock UDP port: UDP
+`19132` is open on Bloom.host (see `config/Geyser-Fabric/config.yml`).
+
+Geyser 2.11.x supports Java 26.2, which is why the 2.0.0 move to 26.2 brought Bedrock back
+(Geyser's last 26.1.2 build topped out at Bedrock 26.33, below what Bedrock clients run).
+
+Bedrock doesn't read Java resource packs, so `config/Geyser-Fabric/` ships custom mappings and a
+Bedrock pack generated with Rainbow: Bedrock players see the terrain slabs and the Track Smoother
+instead of the vanilla states Polymer borrows. **Regenerate them whenever the Polymer mod set
+changes**; see `docs/BEDROCK-MAPPINGS.md`. StreamCraft's Display Block still shows as a sculk
+sensor on Bedrock (it draws through display entities, which Geyser doesn't support).
 
 ## Deploy
 
@@ -52,8 +57,10 @@ python ../server-config.py               # interactive menu (deploy, power, back
 ```
 
 It exports this pack, uploads the `.mrpack` to Bloom.host as `local.mrpack`, removes any
-remote `modpack-info.json` so mrpack4server uses the local file, then restarts the server.
-Needs `TBS/.env` (copy from `TBS/.env.example`).
+remote `modpack-info.json` so mrpack4server uses the local file, uploads the staged secret files
+(SoulCraft's `config/soulcraft/config.json`, from devenv `SoulCraft-TBS`), then restarts the
+server. Needs `TBS/.env` (copy from `TBS/.env.example`) and `~/.deploy/tbs` populated by
+`devenv pull SoulCraft-TBS`.
 
 Manual equivalent:
 
@@ -66,7 +73,7 @@ packwiz modrinth export            # produce TBS-Server-X.Y.Z.mrpack
 
 ```bash
 packwiz cf install <mod-slug> -y   # add a mod from CurseForge (preferred)
-packwiz mr install <mod-slug> -y   # Modrinth fallback (no CF 26.1.2 build)
+packwiz mr install <mod-slug> -y   # Modrinth fallback (no CF 26.2 build)
 packwiz update --all               # update every mod
 packwiz refresh                     # rebuild index.toml after manual edits
 ```
@@ -77,60 +84,65 @@ packwiz refresh                     # rebuild index.toml after manual edits
 > repo root — invoke it as `./packwiz.exe …` in place of `packwiz …` below.
 
 CurseForge is always tried first; Modrinth is used only when a mod has no CurseForge build
-for 26.1.2.
+for 26.2. Two jars are bundled directly in `mods/` instead of being pinned from a store: SlashSlabs and
+SoulCraft Light (unpublished, server-only).
 
 ## Mod tiers
 
 See `CHANGELOG.md` for the exact resolved state of every mod and `docs/TBS-mod-strategy.md`
 for the full design rationale.
 
-- **Tier S1 — Performance core:** Fabric API, Lithium, Krypton, FerriteCore, C2ME, Chunky, Voxy WorldGen
+- **Tier S1 — Performance core:** Fabric API, Lithium, Krypton, FerriteCore, C2ME, Chunky,
+  Voxy WorldGen
 - **Tier S2 — Observability & operations:** Spark, Connectivity, Ledger
-- **Tier S3 — Permissions & admin:** LuckPerms, Essential Permissions, WorldEdit
+- **Tier S3 — Permissions & admin:** LuckPerms, Vanilla Permissions, WorldEdit
 - **Tier S4 — Communication:** Text Placeholder API, Styled Chat
-- **Tier S5 — Gameplay augmentation (vanilla-packet-only):** Better Server Sleep, Lootr,
-  FallingTree, Saplanting, Universal Bone Meal, Trade Cycling, Sit Anywhere!,
-  Open Parties and Claims (chunk claims/parties — anti-theft, server-enforced)
+- **Tier S5 — Gameplay augmentation:** Better Server Sleep, FallingTree, Saplanting,
+  Universal Bone Meal, Trade Cycling, Sit Anywhere!, Open Parties and Claims (chunk
+  claims/parties, server-enforced)
 - **Tier S6 — Discoverability:** BlueMap
 - **Tier S7 — Cross-side:** StreamCraft Live, SlashRails
-- **Tier S8 — Worldgen content (server-only):** Nullscape, Incendium, Amplified
-  Nether, Dungeons Dimensions: Nether, Geophilic, Explorify, Dungeons and Taverns,
-  Structory, Structory: Towers, Towns and Towers, Moog's End Structures,
-  Moog's Voyager Structures, Katters Structures, Sparse Structures
-  (libs: Cristel Lib, Moog's Structure Lib)
-- **Tier S9 — Client recipe sync:** Just Enough Items (JEI). The server-side half
-  of the client's recipe viewer. Since MC 1.21.2 recipes are held server-side, so
-  JEI must run on the server to sync them to JEI on the client. Dedicated-server-safe
-  and vanilla-client-safe — a stock vanilla client is unaffected.
-- **Tier S10 — Crossplay (server-only):** Geyser, Floodgate (Bedrock Edition join)
+- **Tier S8 — Worldgen (server-only):**
+  - Terrain: Tectonic (landforms), Terralith (biomes), Lithostitched (their shared library),
+    SlashSlabs (half-slab steps on one-block rises; Polymer)
+  - Structures: Repurposed Structures (needs MidnightLib), Tidal Towns, Explorify, Dungeons and
+    Taverns, Structory, Structory: Towers, Towns and Towers, Moog's Voyager Structures,
+    Moog's End Structures, Katters Structures (libs: Cristel Lib, Moog's Structure Lib)
+  - Density: Sparse Structures, set to `spreadFactor` 0.75 (`config/sparsestructures.json5`),
+    denser than vanilla spacing
+  - Nether and End: Incendium, Amplified Nether, Nullscape
+- **Tier S9 — Client recipe sync:** Just Enough Items (JEI). Since MC 1.21.2 recipes are held
+  server-side, so JEI runs on the server to sync them to JEI on the client. A stock vanilla
+  client is unaffected.
+- **Tier S10 — Crossplay:** Geyser, Floodgate
+- **Tier S11 — Companion:** SoulCraft Light (Lena), server-only. Only the owner controls her
+  (`access.controllers` in `config/soulcraft/tuning.json`); everyone else can talk with her.
+- **Libraries:** Cloth Config API, Cupboard, Fabric Language Kotlin, Forge Config API Port,
+  Puzzles Lib
 
 ## Pending mods
 
-These mods from the strategy doc have **no 26.1.2 build** on CurseForge or Modrinth yet. Per
-the strategy doc, the architecture absorbs server-side gaps cleanly — they will be added
-incrementally as builds appear, with no TBS-Client change required:
+These mods from the strategy doc aren't in the pack. Per the strategy doc, the architecture
+absorbs server-side gaps cleanly — they can be added later with no TBS-Client change:
 
-- **ModernFix** — load-time / memory fixes (S1)
-- **Noisium** — worldgen chunk perf (S1)
-- **Advanced Backups** — differential world backups (S2)
-- **AutoWhitelist** — Discord-role-linked whitelist sync (S2)
-- **Gamemode Unrestrictor** — flexible `/gm` (S3)
-- **Fabricord** — two-way Discord ↔ in-game chat bridge (S4)
-- **NoExpensive** — removes the anvil "Too Expensive" cap (S5)
-- **Biome Replacer** — worldgen biome remap (S8); Fabric tops out at 1.21.11
-- **Take Us Pillage** — pillager-outpost structures (S8); no 26.1.2 Fabric build
+- **Advanced Backups** — differential world backups (S2). Not yet checked for 26.2.
+- **AutoWhitelist** — Discord-role-linked whitelist sync (S2). Has a 26.2 build; left out of
+  the 2.0.0 reset by decision.
+- **Gamemode Unrestrictor** — flexible `/gm` (S3). Not yet checked for 26.2.
+- **NoExpensive** — removes the anvil "Too Expensive" cap (S5). Not yet checked for 26.2.
+- **Biome Replacer** — worldgen biome remap (S8). On hold: add only if some Terralith biomes turn
+  out unwanted.
+
+Dropped from the list in 2.0.0: ModernFix and Noisium (no 26.x builds), Take Us Pillage (never
+reached 26.x on Fabric; Towns and Towers covers outposts), Fabricord (the Discord chat relay now
+runs in the theblockacademy backend).
 
 `luckperms-placeholders` (S3) was not found on CurseForge or Modrinth under that name —
 LuckPerms group/prefix data is exposed to chat through Styled Chat + Text Placeholder API,
-which are installed. Confirm whether a separate bridge mod is still wanted.
-
-## Substitutions to confirm
-
-- **Better Sleep** (doc, "percentage-based sleep voting") resolved to **Better Server Sleep**
-  on Modrinth — verify it matches the intended behavior.
+which are installed.
 
 ## Version coupling
 
 TBS-Client and TBS-Server ship in **lockstep** (since v1.1.7) — every bump to either pack
-is a synchronized bump of both, same version number. The mod whose jar version must match
-across both packs is **StreamCraft Live**.
+is a synchronized bump of both, same version number. The mods whose jar version must match
+across both packs are **StreamCraft Live** and **SlashRails**.
