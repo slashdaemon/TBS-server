@@ -84,8 +84,8 @@ packwiz refresh                     # rebuild index.toml after manual edits
 > repo root — invoke it as `./packwiz.exe …` in place of `packwiz …` below.
 
 CurseForge is always tried first; Modrinth is used only when a mod has no CurseForge build
-for 26.2. Two jars are bundled directly in `mods/` instead of being pinned from a store: SlashSlabs and
-SoulCraft Light (unpublished, server-only).
+for 26.2. One jar is bundled directly in `mods/` instead of being pinned from a store: SoulCraft Light
+(unpublished, server-only).
 
 ## Mod tiers
 

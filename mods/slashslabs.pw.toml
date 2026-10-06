@@ -1,0 +1,13 @@
+name = "SlashSlabs"
+filename = "slashslabs-0.2.1+mc26.2-fabric.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "98a15fa84311de8370dd196e30a2608d388545bb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8961628
+project-id = 1709433

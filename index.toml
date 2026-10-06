@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "d45cea07c026aa84d855b06cee5b3ecf25e6194c2d0579843fe4dbeded7fe6fe"
+hash = "33e28f02d3ebe4a0e897bfd07030c8934ba3d3e3ea49910df46fbe73b3d0a824"
 
 [[files]]
 file = "README.md"
-hash = "6236147366d4d56c27847c0c07e382b904394d01a0acabfa877976e53398f2c2"
+hash = "a80c7ddb7149aa4dd78d0c239b135a3077b4aa3d9c516f4d1fa96a975ff9d833"
 
 [[files]]
 file = "config/Geyser-Fabric/config.yml"
@@ -250,8 +250,9 @@ hash = "446f763361998b891cfdb5d936ca489d2670df087830591cafd8c39f6ce96c3d"
 metafile = true
 
 [[files]]
-file = "mods/slashslabs-0.2.1+mc26.2-fabric.jar"
-hash = "bee96871a93035da5fe75bedfd8273a5b5a7ac3a34b0632a580bb986ecb63242"
+file = "mods/slashslabs.pw.toml"
+hash = "9fc4b248c05ea83e9653a9c813944ef14554dfa79c5f2fbcdb3a4888b0220608"
+metafile = true
 
 [[files]]
 file = "mods/soulcraft-0.74.14+26.2-light.jar"

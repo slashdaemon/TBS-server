@@ -12,8 +12,8 @@ The plan is in the "TBS 26.2 Reset — Proposed Modset" doc, and variants are co
   to its 26.2 build. Fabric API now comes from CurseForge, which the pack's CurseForge-first
   sourcing policy prefers.
 - **Terrain:** added **Tectonic** 3.0.28 and **Terralith** 2.6.4, plus their shared library
-  **Lithostitched** 1.8.0. Added **SlashSlabs** 0.2.1 (`+mc26.2`), bundled as a jar in `mods/`
-  because its CurseForge file isn't available yet. Removed **Geophilic**, since Terralith now
+  **Lithostitched** 1.8.0. Added **SlashSlabs** 0.2.1 (`+mc26.2`), pinned from CurseForge (file `8961628`;
+  it was bundled as a loose jar until its store release, and the file is byte-identical). Removed **Geophilic**, since Terralith now
   handles biomes.
 - **Structures:** added **Repurposed Structures** 7.7.6 (needs **MidnightLib**) and
   **Tidal Towns** 2.0. **Sparse Structures** now ships `config/sparsestructures.json5` with
