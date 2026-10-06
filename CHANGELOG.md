@@ -52,6 +52,11 @@ The plan is in the "TBS 26.2 Reset — Proposed Modset" doc, and variants are co
   terracottas) and the Track Smoother instead of sculk sensors, copper slabs and a stick. They go
   stale when the Polymer mod set changes; see `docs/BEDROCK-MAPPINGS.md`. Not yet checked with a
   real Bedrock client.
+- **CurseForge-sourced server entries are now `side = "both"`** (Moog's End Structures, Moog's
+  Voyager Structures, Moog's Structure Lib, Towns and Towers, SlashSlabs). packwiz bundles
+  CurseForge entries into the mrpack, server-only ones under `server-overrides/`, and mrpack4server
+  never extracts that folder: those mods were silently missing on production (Moog's and Towns and
+  Towers since they were added).
 - Unchanged pins whose existing file already covers 26.2: FerriteCore, Chunky, Explorify,
   Vanilla Permissions, Towns and Towers. Connectivity still resolves to its 26.1 file on
   CurseForge; the first boot shows whether it loads.

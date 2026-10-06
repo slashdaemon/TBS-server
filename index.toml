@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "33e28f02d3ebe4a0e897bfd07030c8934ba3d3e3ea49910df46fbe73b3d0a824"
+hash = "f29549a1548c59e45a712f650223db931cd6db1ae61e50fd80823c5ffa4a53b2"
 
 [[files]]
 file = "README.md"
@@ -201,17 +201,17 @@ metafile = true
 
 [[files]]
 file = "mods/moogs-end-structures.pw.toml"
-hash = "27870c5fa346f2772d6892c4ca1590ca1d2e3531a8bbeb653529c558d652cd72"
+hash = "e609cbd564f8f5b3de178e985f5b6b876a4c36f136c4d68dfe05db5f53e9e685"
 metafile = true
 
 [[files]]
 file = "mods/moogs-structure-lib.pw.toml"
-hash = "6f58bace999068540d26cb1578a8d6735eb7e7d3995d73912741d00aa37995d5"
+hash = "30e8ee97b4b513674b8c2e106350140b9bdbeb6e65f5eb8b06375e69c7089b75"
 metafile = true
 
 [[files]]
 file = "mods/moogs-voyager-structures.pw.toml"
-hash = "d8744ac7ecc07aaaf5cf005a6632b828231bdd909e4818cdf12b4108025ed8d1"
+hash = "1fcc0d908adf44f875e7748c8792a800ddfa7afcec118feb40de547200728573"
 metafile = true
 
 [[files]]
@@ -251,7 +251,7 @@ metafile = true
 
 [[files]]
 file = "mods/slashslabs.pw.toml"
-hash = "9fc4b248c05ea83e9653a9c813944ef14554dfa79c5f2fbcdb3a4888b0220608"
+hash = "07b55eeaf7494f3b34d65d95ec4ad66c5a71a6dae3b128574eb5a33cf090f999"
 metafile = true
 
 [[files]]
@@ -310,7 +310,7 @@ metafile = true
 
 [[files]]
 file = "mods/towns-and-towers.pw.toml"
-hash = "d8f3b0cd610af6252f270c29d5402a8cb3f756d2753e311b96cac0c98062ed79"
+hash = "8f6dfc38a1a16d64d6cfbac72551ebb6e3c10cc1600bdb1f30adada4de0fc8bd"
 metafile = true
 
 [[files]]

@@ -1,6 +1,6 @@
 name = "SlashSlabs"
 filename = "slashslabs-0.2.1+mc26.2-fabric.jar"
-side = "server"
+side = "both"
 
 [download]
 hash-format = "sha1"

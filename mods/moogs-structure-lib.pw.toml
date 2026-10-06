@@ -1,6 +1,6 @@
 name = "Moog's Structure Lib (moogs_structures)"
 filename = "MoogsStructureLib-fabric-26.2-3.3.0.jar"
-side = "server"
+side = "both"
 
 [download]
 hash-format = "sha1"
