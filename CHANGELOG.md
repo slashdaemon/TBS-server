@@ -40,6 +40,12 @@ The plan is in the "TBS 26.2 Reset — Proposed Modset" doc, and variants are co
   staircases into smooth curves that vanilla minecarts ride. Its 26.2 Fabric jar is a server-only
   build: vanilla clients join, use the tool through Polymer and ride the curves; TBS-Client
   players also see the curved track.
+- **SoulCraft 0.74.14 Light (Lena)** bundled as `mods/soulcraft-0.74.14+26.2-light.jar` (unpublished,
+  server-only). The pack ships her persona (`config/soulcraft/personas/lena.json`, copied from the
+  live server, bound to the LenaBeetle account) and `config/soulcraft/tuning.json` with
+  `access.controllers` set to the owner's UUID: only the owner can run `/soulcraft` or give her tasks;
+  everyone else can talk with her. Her keys are not in the pack: `server-config.py deploy` uploads
+  `config/soulcraft/config.json` from devenv (`SoulCraft-TBS`). Memory bridge off.
 - Unchanged pins whose existing file already covers 26.2: FerriteCore, Chunky, Explorify,
   Vanilla Permissions, Towns and Towers. Connectivity still resolves to its 26.1 file on
   CurseForge; the first boot shows whether it loads.

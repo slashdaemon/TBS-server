@@ -21,6 +21,14 @@ file = "config/slashslabs.json"
 hash = "a49b5c51aed42f8f964168b3164bdec8b4e26ef768479d12f0654bda54d37556"
 
 [[files]]
+file = "config/soulcraft/personas/lena.json"
+hash = "b55d5289f12adf2fe29d7247fbc7dbf514b735ae7aa3a977a65d06188f555dce"
+
+[[files]]
+file = "config/soulcraft/tuning.json"
+hash = "7e3441ce5696f425646b898ad94820b39b1e3011e118e88b04242dae41b460c5"
+
+[[files]]
 file = "config/sparsestructures.json5"
 hash = "ab3afe713bd8c4ddb92072be6a30a508b10c889f292e7f19e195574fef543d7d"
 
@@ -224,6 +232,10 @@ metafile = true
 [[files]]
 file = "mods/slashslabs-0.2.1+mc26.2-fabric.jar"
 hash = "bee96871a93035da5fe75bedfd8273a5b5a7ac3a34b0632a580bb986ecb63242"
+
+[[files]]
+file = "mods/soulcraft-0.74.14+26.2-light.jar"
+hash = "cfb9af62ac7858ee5c2371cabebcede6165b28377bbc6a5dad846d715dfb5860"
 
 [[files]]
 file = "mods/spark.pw.toml"
