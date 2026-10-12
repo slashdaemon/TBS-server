@@ -2,6 +2,21 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.0.1] — 2026-10-12
+
+**StreamCraft Live 0.28.6 → 0.29.3** (security release). Lockstep with TheBlockSurvival 2.0.1;
+no other mod changed.
+
+- Repinned **StreamCraft Live → 0.29.3+mc26.2** (Modrinth `QemNZeWt`, pc jar). 0.29.3 rolls up
+  the 0.29 line: a set of security fixes (wire-size bounds on client packets, restream ownership,
+  LiveKit endpoint pinning, link policy), the screen-share Audio picker, and the social reveal
+  animation removed.
+- **Wire protocol unchanged (still 8).** Players on 0.28.6 still connect; 0.28.6/0.29 mixed was
+  part of StreamCraft's release testing.
+- `config/streamcraft/config.properties`: dropped `api_url`. 0.29.3 no longer reads it (the
+  backend comes from `STREAMCRAFT_API_URL` only), and the old value equalled the built-in default.
+  `allow_vanilla_clients=true` and `social_enabled=true` stay.
+
 ## [2.0.0] — unreleased (draft, branch `reset-26.2`)
 
 **World reset onto Minecraft 26.2.** This draft is still being tested and has not been deployed.

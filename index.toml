@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "f29549a1548c59e45a712f650223db931cd6db1ae61e50fd80823c5ffa4a53b2"
+hash = "625e84c827e13f5a0a8c22df846c30eab1510f7d843de83310b7825524442666"
 
 [[files]]
 file = "README.md"
@@ -38,7 +38,7 @@ hash = "a49b5c51aed42f8f964168b3164bdec8b4e26ef768479d12f0654bda54d37556"
 
 [[files]]
 file = "config/soulcraft/personas/lena.json"
-hash = "b55d5289f12adf2fe29d7247fbc7dbf514b735ae7aa3a977a65d06188f555dce"
+hash = "d26f37353b636699fad32f2f963f951bd9d0408b490d736340c350f71c5b929c"
 
 [[files]]
 file = "config/soulcraft/tuning.json"
@@ -50,7 +50,7 @@ hash = "ab3afe713bd8c4ddb92072be6a30a508b10c889f292e7f19e195574fef543d7d"
 
 [[files]]
 file = "config/streamcraft/config.properties"
-hash = "482159042d416d4fd0ed251051fc56437d68442fd598dec3645ec6e061361871"
+hash = "e9f2a3332776432929f74c28600926e80e8cad39313fcbda1ea3fb8fbc97465d"
 
 [[files]]
 file = "docs/BEDROCK-MAPPINGS.md"
@@ -270,7 +270,7 @@ metafile = true
 
 [[files]]
 file = "mods/streamcraft-live.pw.toml"
-hash = "d5230f5b31ad39a344f964fe8acbfa02925e40e20a112cd3ca48a0bc31eaf1e1"
+hash = "3bb9d2cbcf545235f1acca545c2ab9159383a791502e3ab941a7f609a9c68d81"
 metafile = true
 
 [[files]]
