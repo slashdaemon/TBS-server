@@ -2,6 +2,13 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.0.3] — 2026-10-25
+
+**SoulCraft 0.77.1 → 0.77.2.** Fixes screen vision from the first production test: turning on
+`/screenwatch` after asking Lena to look now works (she used to never request the screen for the
+rest of that watch), and her first answer waits up to 3 s for the first frame instead of answering
+blind. No other change.
+
 ## [2.0.2] — 2026-10-25
 
 **SoulCraft 0.74.14 → 0.77.1: Lena can look at a shared screen.** No other mod changed.
