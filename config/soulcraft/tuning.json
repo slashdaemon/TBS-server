@@ -3,5 +3,8 @@
     "controllers": [
       "0d3160ae-29d8-495d-8609-08959b530633"
     ]
+  },
+  "voice": {
+    "min_speech_energy": 400
   }
 }

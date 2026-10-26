@@ -2,6 +2,17 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.0.4] — 2026-10-25
+
+**SoulCraft 0.77.2 → 0.77.3, and Lena hears quieter voices.**
+
+- `config/soulcraft/tuning.json`: `voice.min_speech_energy` 500 → **400**. In the second screen-vision
+  test most unanswered voice turns were dropped before transcription as too quiet (rejected
+  utterances averaged 424–458 RMS against the 500 floor). Applied live with
+  `/soulcraft tuning reload` before this release.
+- SoulCraft 0.77.3: she keeps watching a shared screen for 2 minutes after each turn (was 45 s),
+  and "sit on this block over here" makes her sit instead of just walking over.
+
 ## [2.0.3] — 2026-10-25
 
 **SoulCraft 0.77.1 → 0.77.2.** Fixes screen vision from the first production test: turning on
