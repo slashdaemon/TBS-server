@@ -2,6 +2,20 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.0.2] — 2026-10-25
+
+**SoulCraft 0.74.14 → 0.77.1: Lena can look at a shared screen.** No other mod changed.
+
+- **Screen vision.** Ask Lena to look at your StreamCraft screen share and she walks round to the
+  lit side of the display and talks about what's on it. Frames come from the screen-agent sidecar
+  on the lena-voice droplet (`https://vision.theblock.academy`): SoulCraft asks for one player's
+  screen only while she's watching it. The staged `config/soulcraft/config.json` gains a
+  `screenVision` section (sidecar URL, key and this server's StreamCraft room).
+- **Owner only for now.** `/screenwatch on` is limited to `access.controllers` (the owner) until
+  the privacy-terms question about sending frames to the AI provider is settled.
+- **Also from 0.76.0:** per-player conversation history, whispers (`/msg LenaBeetle`), and the
+  scoped memory-bridge client. The bridge stays **off** on TBS (`memoryBridge.enabled=false`).
+
 ## [2.0.1] — 2026-10-12
 
 **StreamCraft Live 0.28.6 → 0.29.3** (security release). Lockstep with TheBlockSurvival 2.0.1;
