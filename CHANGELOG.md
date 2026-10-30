@@ -2,6 +2,17 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.0.5] — 2026-10-29
+
+**SoulCraft 0.77.3 → 0.78.0: Lena hears a shared screen and follows it over time.**
+
+- While watching, each turn now carries up to 4 frames from the last minute (oldest first, at least
+  8 s apart) instead of a single still. It also carries a transcript of the screen's own sound from
+  the last couple of minutes. The screen-vision sidecar (`vision.theblock.academy`) transcribes the
+  watched player's `screen_share_audio` track with Cartesia, never their mic.
+- Ships with the sidecar redeploy that adds `CARTESIA_API_KEY`. No config change in this pack.
+  `/screenwatch` stays owner-only (`access.controllers`) until the terms decision.
+
 ## [2.0.4] — 2026-10-25
 
 **SoulCraft 0.77.2 → 0.77.3, and Lena hears quieter voices.**
