@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "2d707e28667029c7b1125071077ac7146fc33dd2ab8ea978f9e48e867ac464cf"
+hash = "32cf57bf1a41947af199bc432ee8438c2d90863e1747b53a541aa2329385d394"
 
 [[files]]
 file = "README.md"
@@ -255,8 +255,8 @@ hash = "07b55eeaf7494f3b34d65d95ec4ad66c5a71a6dae3b128574eb5a33cf090f999"
 metafile = true
 
 [[files]]
-file = "mods/soulcraft-0.78.0+26.2-light.jar"
-hash = "fbf301bd4654a67fe4250bc91d1db9aa7deecf2188d75dc659ede193ed6b229d"
+file = "mods/soulcraft-0.78.1+26.2-light.jar"
+hash = "e53cdc515a6192f1aeecc297003195f13fd988e27646d42ff1c661ca8ca78e4e"
 
 [[files]]
 file = "mods/spark.pw.toml"

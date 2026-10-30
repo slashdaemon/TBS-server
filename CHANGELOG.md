@@ -2,6 +2,18 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.0.6] — 2026-10-29
+
+**SoulCraft 0.78.0 → 0.78.1: talk about her memory is answered, not run as a task.**
+
+- Asked about a Discord conversation, Lena replied "got it! I'll I appreciate you reaching out…" and
+  then failed it as a task. The intent classifier's reply was matched with `contains("DIRECTIVE")`,
+  so an explanation that mentioned the word became a command, and the task summarizer's refusal
+  went into the acknowledgement. Only a bare label counts now (anything else is conversation), and
+  a summary that isn't a short task phrase is answered as conversation instead.
+- Ships alongside slashAI 0.107.2, which turns quiet Discord conversations into memories after
+  30 minutes, so she can recall what was said there. No config change in this pack.
+
 ## [2.0.5] — 2026-10-29
 
 **SoulCraft 0.77.3 → 0.78.0: Lena hears a shared screen and follows it over time.**
