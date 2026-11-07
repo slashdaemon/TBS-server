@@ -2,6 +2,22 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.0.7] — 2026-11-06
+
+**SoulCraft 0.78.1 → 0.79.0: Lena can see your webcam on a display. StreamCraft Live 0.29.3 → 0.33.0.**
+
+- A Display Block set to a player's camera is now something Lena can look at ("Lena, can you see
+  me on my camera?"). Before, she only looked for displays showing a screen share, so a camera
+  display fell through to plain conversation and she said she couldn't see it. The screen-vision
+  sidecar (`vision.theblock.academy`) now also subscribes to a watched player's webcam video
+  (never their mic).
+- Camera vision has its own opt-in, `/camerawatch on`, separate from `/screenwatch`, and like it is
+  limited to `access.controllers` (owner-only here) until the privacy terms cover it. Existing
+  `/screenwatch` consent is unchanged.
+- StreamCraft Live 0.33.0 (phone, tablet own-share, Display Block drops itself). Same wire protocol
+  (8) as 0.29.3, so players on the published TBS-client still connect.
+- Ships with the sidecar redeploy that adds camera feeds. No config change in this pack.
+
 ## [2.0.6] — 2026-10-29
 
 **SoulCraft 0.78.0 → 0.78.1: talk about her memory is answered, not run as a task.**

@@ -255,8 +255,8 @@ hash = "07b55eeaf7494f3b34d65d95ec4ad66c5a71a6dae3b128574eb5a33cf090f999"
 metafile = true
 
 [[files]]
-file = "mods/soulcraft-0.78.1+26.2-light.jar"
-hash = "e53cdc515a6192f1aeecc297003195f13fd988e27646d42ff1c661ca8ca78e4e"
+file = "mods/soulcraft-0.79.0+26.2-light.jar"
+hash = "9ffdd818e14e72940f0426ddb0e072cd046340bc44276391119886bf31d5fbab"
 
 [[files]]
 file = "mods/spark.pw.toml"
@@ -270,7 +270,7 @@ metafile = true
 
 [[files]]
 file = "mods/streamcraft-live.pw.toml"
-hash = "3bb9d2cbcf545235f1acca545c2ab9159383a791502e3ab941a7f609a9c68d81"
+hash = "1e4b385a2439ff302aba74654a4540a5b6b97689dbf2a5e9c0628008ee796af5"
 metafile = true
 
 [[files]]
