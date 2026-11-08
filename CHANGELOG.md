@@ -2,6 +2,27 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.0.8] — 2026-11-07
+
+**SoulCraft 0.79.0 → 0.80.0: Lena watches a shared screen until it ends, speaks up on her own (rarely), and remembers it.**
+
+- She keeps watching until the share stops, the display is gone, the sharer leaves, or someone
+  tells her to stop ("stop watching", "that's enough", "look away", or just "stop"). The old 2-minute
+  timer is gone. Eating or a fight pauses the watch and she goes back to it; bedtime, autonomy and
+  town routines wait while she watches. Talk like "hold on, look at this" no longer ends it.
+- Unprompted remarks, sparse: only when the picture or the video's sound changed, at most one every
+  2 minutes and 8 an hour, never while she or a player is talking, and only when a cheap model rates
+  the moment clearly notable. Tunable in `tuning.json` `screen_commentary` (`shadow:true` logs
+  decisions without speaking).
+- A watch of 3+ minutes becomes one memory ("Watched Slash's screen share for 40 minutes: …"), and
+  she now sends session recaps every 2 hours and when everyone has been offline for 30 minutes, not
+  only at despawn. With slashAI 0.109.0, Discord questions like "what happened in Minecraft last
+  night?" read that time window directly.
+- Config: the memory bridge is on again for TBS with a scoped `mbk_` key and `serverLabel: "tbs"`
+  (it had been left off in the staged config, so nothing reached long-term memory). A rejected key
+  now logs an ERROR at boot; `/soulcraft memory bridge` shows the bridge state.
+- Ships with the screen-vision sidecar redeploy that reports when a share stops (410).
+
 ## [2.0.7] — 2026-11-06
 
 **SoulCraft 0.78.1 → 0.79.0: Lena can see your webcam on a display. StreamCraft Live 0.29.3 → 0.33.0.**
