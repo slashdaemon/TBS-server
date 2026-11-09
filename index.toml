@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "c017b544be83da3d6039d38cb5379fb599aaa3c1771ad5514ffa9a7528550bbc"
+hash = "fe6a59a9d79d6004e68346f861693bfc8b99684dce7424d69bd282986096c817"
 
 [[files]]
 file = "README.md"
@@ -38,7 +38,7 @@ hash = "a49b5c51aed42f8f964168b3164bdec8b4e26ef768479d12f0654bda54d37556"
 
 [[files]]
 file = "config/soulcraft/personas/lena.json"
-hash = "d26f37353b636699fad32f2f963f951bd9d0408b490d736340c350f71c5b929c"
+hash = "c7aa815158cd55b22d8bab9b24bd7036550765182d59b25ad0c36849dc9a6a86"
 
 [[files]]
 file = "config/soulcraft/tuning.json"

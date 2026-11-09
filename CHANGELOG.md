@@ -2,6 +2,13 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.0.9] — 2026-11-08
+
+**Lena's in-game voice moves to Cartesia sonic-3.6.**
+
+- `config/soulcraft/personas/lena.json`: `"model": "sonic-3.6"` (was `sonic-3`). Config only; SoulCraft
+  stays 0.80.0, because the persona file is what sets the model.
+
 ## [2.0.8] — 2026-11-07
 
 **SoulCraft 0.79.0 → 0.80.0: Lena watches a shared screen until it ends, speaks up on her own (rarely), and remembers it.**

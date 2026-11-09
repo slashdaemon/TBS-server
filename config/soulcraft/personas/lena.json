@@ -44,7 +44,7 @@
     },
     "cartesia": {
       "voice_id": "ca9095ca-987f-4c63-bdc6-cc418167ea00",
-      "model": "sonic-3",
+      "model": "sonic-3.6",
       "language": "en",
       "default_emotion": "positivity:moderate",
       "speed": 1.0,
