@@ -2,6 +2,17 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.0.10] — 2026-11-08
+
+**SoulCraft 0.80.0 → 0.81.0: Lena's in-game brain moves to Claude Sonnet 5.5.** First deploy of the
+2.0.9 voice change too (2.0.9 was never deployed).
+
+- `mods/soulcraft-0.81.0+26.2-light.jar` replaces `0.80.0`. Sonnet 5.5 as the default model, thinking
+  kept off with `between_tools` (5.5 rejects `disabled`), 5.5 pricing for the spend cap.
+- `config/soulcraft/tuning.json`: `"llm": {"model": "claude-sonnet-5-5"}`. The server's own
+  `config.json` names a model, so the jar default alone wouldn't switch it. Revert by setting this
+  back to `claude-sonnet-4-6` (no new jar needed).
+
 ## [2.0.9] — 2026-11-08
 
 **Lena's in-game voice moves to Cartesia sonic-3.6.**

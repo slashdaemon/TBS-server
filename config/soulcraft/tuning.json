@@ -6,5 +6,8 @@
   },
   "voice": {
     "min_speech_energy": 400
+  },
+  "llm": {
+    "model": "claude-sonnet-5-5"
   }
 }

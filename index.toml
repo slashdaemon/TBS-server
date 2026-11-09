@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "CHANGELOG.md"
-hash = "fe6a59a9d79d6004e68346f861693bfc8b99684dce7424d69bd282986096c817"
+hash = "a27dc73704d3310578c3f0ea0dbf6c36682760204aa8253dbf6ce98b831178bb"
 
 [[files]]
 file = "README.md"
@@ -42,7 +42,7 @@ hash = "c7aa815158cd55b22d8bab9b24bd7036550765182d59b25ad0c36849dc9a6a86"
 
 [[files]]
 file = "config/soulcraft/tuning.json"
-hash = "eafeaef41765f59e8b7a66fa5f8edbd94f86e03688c7a93a64871422f4b98586"
+hash = "813eee5609b235a3214291e71b2935f379a13deda3f1eae24aa42cad7561bf19"
 
 [[files]]
 file = "config/sparsestructures.json5"
@@ -255,8 +255,8 @@ hash = "07b55eeaf7494f3b34d65d95ec4ad66c5a71a6dae3b128574eb5a33cf090f999"
 metafile = true
 
 [[files]]
-file = "mods/soulcraft-0.80.0+26.2-light.jar"
-hash = "d57a751a7b3d20fefcf891cda944b775b74f80adca1db93dbe7a40e46db04922"
+file = "mods/soulcraft-0.81.0+26.2-light.jar"
+hash = "3c53c2f821bc2955f4b1249a6f038b148472da526bc4d8a62607c2c203ef2374"
 
 [[files]]
 file = "mods/spark.pw.toml"
