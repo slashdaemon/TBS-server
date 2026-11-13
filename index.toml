@@ -255,8 +255,8 @@ hash = "07b55eeaf7494f3b34d65d95ec4ad66c5a71a6dae3b128574eb5a33cf090f999"
 metafile = true
 
 [[files]]
-file = "mods/soulcraft-0.81.0+26.2-light.jar"
-hash = "3c53c2f821bc2955f4b1249a6f038b148472da526bc4d8a62607c2c203ef2374"
+file = "mods/soulcraft-0.82.0+26.2-light.jar"
+hash = "9dda2bfae2cbf844781c248e4e570553767c8f76e68cdf50bcb840822bb0b7f6"
 
 [[files]]
 file = "mods/spark.pw.toml"

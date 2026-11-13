@@ -2,6 +2,19 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.0.11] — 2026-11-12
+
+**SoulCraft 0.81.0 → 0.82.0: Lena watches a shared screen like a friend, not a narrator.**
+
+- `mods/soulcraft-0.82.0+26.2-light.jar` replaces `0.81.0`. Unprompted remarks are about the play
+  (fails, wins, clutches), not a description of the screen; rare 1-4 word gut reactions on big
+  moments; a running note of what's being played; spoken lines capped (remarks at 15 words).
+- The watch memory now says it happened in Minecraft on a StreamCraft display and names the game, so
+  Discord Lena (slashAI 0.113.0) connects it.
+- New `screen_commentary` knobs default sensibly (`react_min_gap_seconds` 45, `reacts_per_hour_cap`
+  20, `max_remark_words` 15); no tuning.json change. Set `"screen_commentary": {"shadow": true}` to
+  log without speaking.
+
 ## [2.0.10] — 2026-11-08
 
 **SoulCraft 0.80.0 → 0.81.0: Lena's in-game brain moves to Claude Sonnet 5.5.** First deploy of the
