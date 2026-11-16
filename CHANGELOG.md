@@ -2,6 +2,15 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.0.12] — 2026-11-16
+
+**Fabric Loader 0.19.5 → 0.20.1** (latest stable for MC 26.2). No mod changes.
+
+- Set in `pack.toml` (`[versions] fabric`); mrpack4server installs the loader from the pack, so
+  the Bloom panel's Fabric version/build fields are not used. Don't press "Update to the latest
+  build" there: it reinstalls the egg and overwrites `/mrpack4server.jar` with the plain Fabric
+  launcher (see the impostor-jar note in the root `CLAUDE.md`).
+
 ## [2.0.11] — 2026-11-12
 
 **SoulCraft 0.81.0 → 0.82.0: Lena watches a shared screen like a friend, not a narrator.**
