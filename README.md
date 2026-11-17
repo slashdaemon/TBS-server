@@ -2,16 +2,16 @@
 
 **The Block Survival — Server modpack**
 
-Fabric modpack for **Minecraft 26.2**, built with [packwiz](https://packwiz.infra.link/).
+Fabric modpack for **Minecraft 26.3**, built with [packwiz](https://packwiz.infra.link/).
 Deployed to the game server via [mrpack4server](https://github.com/Patbox/mrpack4server).
 
 TBS-Server makes the server fast, observable, well-administered, and gameplay-rich **while
-staying joinable by any stock vanilla 26.2 client**. Players need no mods; the server sends one
+staying joinable by any stock vanilla 26.3 client**. Players need no mods; the server sends one
 small resource pack for its terrain slabs, which they accept on join.
 
 ## The vanilla-client contract
 
-The base server is vanilla 26.2. Every server mod must either:
+The base server is vanilla 26.3. Every server mod must either:
 
 1. **Add no new client-visible content.** It changes how vanilla mechanics or world generation
    behave (sleep voting, tree-felling, trade restocking, new biomes and structures built from
@@ -38,8 +38,9 @@ rails). See `docs/TBS-mod-strategy.md` for the full design.
 Java joiner: full gameplay, no StreamCraft voice. The host must expose a Bedrock UDP port: UDP
 `19132` is open on Bloom.host (see `config/Geyser-Fabric/config.yml`).
 
-Geyser 2.11.x supports Java 26.2, which is why the 2.0.0 move to 26.2 brought Bedrock back
-(Geyser's last 26.1.2 build topped out at Bedrock 26.33, below what Bedrock clients run).
+Geyser 2.12.x supports Java 26.3 and current Bedrock clients (26.63), which is why 2.1.0 moved to
+26.3: Geyser's last 26.2 build (2.11.3) stops short of them, as its 26.1.2 build did before the
+2.0.0 move to 26.2.
 
 Bedrock doesn't read Java resource packs, so `config/Geyser-Fabric/` ships custom mappings and a
 Bedrock pack generated with Rainbow: Bedrock players see the terrain slabs and the Track Smoother
@@ -73,7 +74,7 @@ packwiz modrinth export            # produce TBS-Server-X.Y.Z.mrpack
 
 ```bash
 packwiz cf install <mod-slug> -y   # add a mod from CurseForge (preferred)
-packwiz mr install <mod-slug> -y   # Modrinth fallback (no CF 26.2 build)
+packwiz mr install <mod-slug> -y   # Modrinth fallback (no CF 26.3 build)
 packwiz update --all               # update every mod
 packwiz refresh                     # rebuild index.toml after manual edits
 ```
@@ -84,7 +85,7 @@ packwiz refresh                     # rebuild index.toml after manual edits
 > repo root — invoke it as `./packwiz.exe …` in place of `packwiz …` below.
 
 CurseForge is always tried first; Modrinth is used only when a mod has no CurseForge build
-for 26.2. One jar is bundled directly in `mods/` instead of being pinned from a store: SoulCraft Light
+for 26.3. One jar is bundled directly in `mods/` instead of being pinned from a store: SoulCraft Light
 (unpublished, server-only).
 
 ## Mod tiers
@@ -97,7 +98,7 @@ for the full design rationale.
 - **Tier S2 — Observability & operations:** Spark, Connectivity, Ledger
 - **Tier S3 — Permissions & admin:** LuckPerms, Vanilla Permissions, WorldEdit
 - **Tier S4 — Communication:** Text Placeholder API, Styled Chat
-- **Tier S5 — Gameplay augmentation:** Better Server Sleep, FallingTree, Saplanting,
+- **Tier S5 — Gameplay augmentation:** Better Server Sleep, FallingTree,
   Universal Bone Meal, Trade Cycling, Sit Anywhere!, Open Parties and Claims (chunk
   claims/parties, server-enforced)
 - **Tier S6 — Discoverability:** BlueMap
@@ -125,11 +126,13 @@ for the full design rationale.
 These mods from the strategy doc aren't in the pack. Per the strategy doc, the architecture
 absorbs server-side gaps cleanly — they can be added later with no TBS-Client change:
 
-- **Advanced Backups** — differential world backups (S2). Not yet checked for 26.2.
+- **Saplanting** — auto-plants dropped saplings (S5). In 2.0.x; no 26.3 build yet.
+
+- **Advanced Backups** — differential world backups (S2). Not yet checked for 26.3.
 - **AutoWhitelist** — Discord-role-linked whitelist sync (S2). Has a 26.2 build; left out of
   the 2.0.0 reset by decision.
-- **Gamemode Unrestrictor** — flexible `/gm` (S3). Not yet checked for 26.2.
-- **NoExpensive** — removes the anvil "Too Expensive" cap (S5). Not yet checked for 26.2.
+- **Gamemode Unrestrictor** — flexible `/gm` (S3). Not yet checked for 26.3.
+- **NoExpensive** — removes the anvil "Too Expensive" cap (S5). Not yet checked for 26.3.
 - **Biome Replacer** — worldgen biome remap (S8). On hold: add only if some Terralith biomes turn
   out unwanted.
 

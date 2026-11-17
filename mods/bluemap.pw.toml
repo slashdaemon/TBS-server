@@ -1,13 +1,13 @@
 name = "BlueMap"
-filename = "bluemap-5.27-fabric.jar"
+filename = "bluemap-5.29-fabric.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "3bdb1400b8976cbf0fd4d78ed3f8c69ee4c24d6f"
+hash = "1fbd340333962fc778d88c23a618e6208d48ce55"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8893450
+file-id = 9120498
 project-id = 406463

@@ -2,6 +2,30 @@
 
 All notable changes to the TBS-Server modpack.
 
+## [2.1.0] — 2026-11-16
+
+**Minecraft 26.2 → 26.3.** Geyser 2.12 (current Bedrock clients, 26.63) only runs on Java 26.3,
+and every other mod already had a 26.3 build. The world is kept and upgraded in place; terrain
+generated from here on may not line up exactly with older terrain where the two meet (Lithostitched
+and Tectonic changed).
+
+- **Every entry moved to its 26.3 build.** Notable: Geyser 2.11.3-b1247 → 2.12.1-b1303, Floodgate
+  2.2.6 → 2.2.7, StreamCraft Live 0.33.0 → 0.34.1+mc26.3, SlashRails and SlashSlabs +mc26.3, Fabric
+  API 0.161.0 → 0.166.2, Lithostitched 1.8.0 → 2.0.6, Tectonic 3.0.28 → 3.0.31, Lithium 0.26.3,
+  C2ME 0.4.2-alpha.0.119, Voxy WorldGen 2.4.3 → 3.0.0 (TBS-Client must ship the same version),
+  Open Parties and Claims 0.33.0, Nullscape 2.0.1, Dungeons and Taverns 6.1.0.
+- **Tectonic is pinned at 3.0.31,** the newest stable 26.3 release on CurseForge. The 3.1.0 betas
+  turn Terralith compatibility and terrain blending off, and Fabric refuses to load them next to
+  Terralith.
+- **Styled Chat 2.14.0 and Text Placeholder API 3.2.0 now come from Modrinth.** Their CurseForge
+  pages have no 26.3 file yet.
+- **SoulCraft Light 0.82.0+26.2 → 0.82.1+26.3** (Lena), the 26.3 port. Bundled jar as before.
+- **Saplanting is out**: no 26.3 build. It is under Pending mods.
+- Fabric Loader stays 0.20.1.
+- **Bedrock mappings not yet regenerated.** SlashSlabs, SlashRails and StreamCraft changed jars,
+  so the Rainbow mappings in `config/Geyser-Fabric/` are still the 26.2 set until the next
+  Rainbow pass (`docs/BEDROCK-MAPPINGS.md`).
+
 ## [2.0.12] — 2026-11-16
 
 **Fabric Loader 0.19.5 → 0.20.1** (latest stable for MC 26.2). No mod changes.
